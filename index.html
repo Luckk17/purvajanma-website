@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Purvajanma — Past Life Destiny</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cinzel+Decorative:wght@700;900&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:#0a0608;color:rgba(228,188,96,.9);font-family:'Cinzel',serif;min-height:100vh;overflow-x:hidden}
+
+.site-nav{position:relative;z-index:80;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 24px;background:linear-gradient(180deg,rgba(10,6,8,.94),rgba(10,6,8,.72) 72%,transparent);backdrop-filter:blur(10px)}
+.nav-mark{font-family:'Cinzel Decorative',serif;font-size:16px;font-weight:900;letter-spacing:2px;color:#f0c040;text-decoration:none;text-shadow:0 0 18px rgba(220,140,10,.35);white-space:nowrap}
+.nav-links{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-wrap:wrap}
+.nav-link,.nav-founder{font-family:'Cinzel',serif;font-size:8px;font-weight:700;letter-spacing:3px;text-transform:uppercase;text-decoration:none;transition:color .2s,border-color .2s,background .2s,box-shadow .2s}
+.nav-link{color:rgba(200,155,65,.68);padding:9px 10px}
+.nav-link:hover,.nav-link.active{color:#f0c040}
+.nav-founder{color:#fff5e0;border:1px solid rgba(200,140,30,.42);background:rgba(212,72,32,.18);padding:10px 13px;box-shadow:0 0 18px rgba(212,72,32,.08)}
+.nav-founder:hover{border-color:rgba(240,192,64,.75);background:rgba(212,72,32,.32);box-shadow:0 0 24px rgba(212,72,32,.18)}
+
+/* ── PAGE 1 INPUT ── */
+#page-input{min-height:calc(100vh - 64px);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 24px 80px;position:relative;max-width:680px;margin:0 auto}
+#page-input::before{content:'';position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(1px 1px at 12% 18%,rgba(240,200,80,.6) 0%,transparent 100%),radial-gradient(1.5px 1.5px at 34% 7%,rgba(240,200,80,.8) 0%,transparent 100%),radial-gradient(1px 1px at 56% 14%,rgba(240,200,80,.5) 0%,transparent 100%),radial-gradient(2px 2px at 78% 22%,rgba(240,200,80,.9) 0%,transparent 100%),radial-gradient(1px 1px at 7% 55%,rgba(240,200,80,.5) 0%,transparent 100%),radial-gradient(1.5px 1.5px at 63% 48%,rgba(240,200,80,.7) 0%,transparent 100%),radial-gradient(1px 1px at 45% 78%,rgba(240,200,80,.4) 0%,transparent 100%),radial-gradient(2px 2px at 22% 88%,rgba(240,200,80,.5) 0%,transparent 100%);z-index:0;animation:star-tw 5s ease-in-out infinite alternate}
+@keyframes star-tw{from{opacity:.5}to{opacity:1}}
+#page-input>*{position:relative;z-index:1}
+
+.site-tag{font-family:'Cinzel',serif;font-size:9px;letter-spacing:6px;color:rgba(160,95,20,.5);text-transform:uppercase;margin-bottom:44px;display:flex;align-items:center;gap:14px;align-self:flex-start}
+.site-tag::before{content:'';display:block;width:28px;height:1px;background:linear-gradient(90deg,transparent,rgba(200,130,20,.5))}
+
+.hero-title{font-family:'Cinzel Decorative',serif;font-size:clamp(48px,11vw,88px);font-weight:900;line-height:.88;letter-spacing:2px;background:linear-gradient(170deg,#fffde8 0%,#f8e060 15%,#e8aa10 38%,#b87008 58%,#8a5000 75%,#c89020 88%,#f0d050 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 24px rgba(220,140,10,.4));margin-bottom:10px;align-self:flex-start}
+
+.hero-sub{font-family:'Libre Baskerville',serif;font-style:italic;font-size:15px;line-height:1.8;color:rgba(200,155,65,.7);max-width:480px;margin-bottom:8px;align-self:flex-start}
+.hero-sub2{font-family:'Cinzel',serif;font-size:8px;letter-spacing:5px;color:rgba(130,80,18,.5);text-transform:uppercase;margin-bottom:44px;align-self:flex-start}
+
+.orn-rule{width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(200,130,20,.2) 30%,rgba(240,180,40,.55) 50%,rgba(200,130,20,.2) 70%,transparent);margin-bottom:36px;position:relative}
+.orn-rule span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#0a0608;padding:0 12px;font-size:13px;color:rgba(200,130,20,.4);line-height:1}
+
+.form-group{width:100%;margin-bottom:18px}
+.form-label{font-family:'Cinzel',serif;font-size:7.5px;letter-spacing:4px;color:rgba(160,95,20,.55);text-transform:uppercase;display:block;margin-bottom:10px}
+.input-row{display:flex;border:1px solid rgba(180,110,18,.22);background:rgba(255,255,255,.018);transition:border-color .2s,box-shadow .2s;position:relative}
+.input-row::before{content:'';position:absolute;top:0;left:0;width:18px;height:18px;border-top:1px solid rgba(220,160,30,.4);border-left:1px solid rgba(220,160,30,.4);pointer-events:none}
+.input-row:focus-within{border-color:rgba(200,140,30,.45);box-shadow:0 0 20px rgba(200,140,30,.12)}
+.input-prefix{font-family:'Cinzel',serif;font-size:11px;color:rgba(180,110,20,.6);padding:0 16px;display:flex;align-items:center;border-right:1px solid rgba(180,110,18,.22);background:rgba(180,100,10,.04);white-space:nowrap;letter-spacing:1px}
+.input-row input,.input-row select{flex:1;background:transparent;border:none;outline:none;padding:15px 18px;font-family:'Cinzel',serif;font-size:16px;font-weight:400;color:rgba(228,188,96,.9);min-width:0;letter-spacing:.5px}
+.input-row input::placeholder{color:rgba(140,85,18,.35)}
+.input-row select option{background:#0a0608;color:rgba(228,188,96,.9)}
+.input-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;width:100%}
+
+.reveal-btn{width:100%;margin-top:28px;padding:20px 32px;background:#d44820;color:rgba(255,235,200,.95);border:none;font-family:'Cinzel',serif;font-size:13px;font-weight:700;letter-spacing:6px;text-transform:uppercase;cursor:pointer;transition:background .2s,transform .1s;position:relative;overflow:hidden}
+.reveal-btn::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.07),transparent);transform:translateX(-100%);transition:transform .5s}
+.reveal-btn:hover{background:#b83810}
+.reveal-btn:hover::after{transform:translateX(100%)}
+.reveal-btn:active{transform:scale(.99)}
+.reveal-btn:disabled{opacity:.45;cursor:not-allowed}
+.input-hint{font-family:'Cinzel',serif;font-size:7px;letter-spacing:3px;color:rgba(110,65,12,.45);text-transform:uppercase;margin-top:14px;text-align:center}
+.error-msg{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;color:#d44820;text-transform:uppercase;margin-top:12px;display:none;text-align:center}
+
+/* ── LOADING ── */
+#loading{display:none;position:fixed;inset:0;z-index:200;background:#0a0608;flex-direction:column;align-items:center;justify-content:center;gap:20px}
+#loading.visible{display:flex}
+.load-ring{width:72px;height:72px;border:1px solid rgba(180,110,18,.2);border-top:1px solid #f0c040;border-radius:50%;animation:spin 1.4s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.load-title{font-family:'Cinzel',serif;font-size:11px;letter-spacing:8px;color:rgba(200,140,30,.7);text-transform:uppercase}
+.load-phrase{font-family:'Cinzel',serif;font-size:12px;font-weight:400;color:rgba(140,85,18,.5);letter-spacing:3px;text-align:center}
+
+/* ── PAGE 2 RESULT ── */
+#page-result{display:none}
+#page-result.visible{display:block;padding:30px 0 56px}
+
+/* ── CARD ── */
+.card{width:600px;max-width:100%;margin:0 auto;position:relative;background:#07030a;outline:1px solid rgba(200,140,30,.3);box-shadow:inset 0 0 80px rgba(140,50,0,.08),0 0 40px rgba(180,70,0,.15),0 0 1px rgba(200,140,30,.4),0 50px 100px rgba(0,0,0,.9);overflow:hidden}
+
+/* hero */
+.hero{position:relative;height:340px;overflow:hidden;background:#050108}
+.sky{position:absolute;inset:0;background:radial-gradient(ellipse 55% 65% at 50% -10%,rgba(210,170,60,.18) 0%,transparent 65%),radial-gradient(ellipse 80% 40% at 50% 105%,rgba(220,60,10,.7) 0%,rgba(120,20,5,.5) 40%,transparent 75%),radial-gradient(ellipse 100% 60% at 50% 80%,rgba(70,10,5,.9) 0%,transparent 70%),linear-gradient(180deg,#060010 0%,#0a0208 35%,#0c0306 60%,#080202 100%)}
+.stars-wrap{position:absolute;inset:0}
+.star-dot{position:absolute;border-radius:50%;background:#fff;animation:tw ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:var(--base);transform:scale(1)}50%{opacity:1;transform:scale(1.6)}}
+.shoot{position:absolute;top:12%;left:-5%;width:120px;height:1px;background:linear-gradient(90deg,transparent,rgba(255,240,200,.95),transparent);transform:rotate(-18deg);animation:shooting 9s linear 3s infinite;opacity:0;filter:blur(.5px)}
+@keyframes shooting{0%{opacity:0;transform:rotate(-18deg) translateX(0)}3%{opacity:1}18%{opacity:0;transform:rotate(-18deg) translateX(700px)}100%{opacity:0;transform:rotate(-18deg) translateX(700px)}}
+
+.role-symbol-wrap{position:absolute;width:100px;height:100px;top:28px;left:50%;transform:translateX(-50%);z-index:2}
+.role-symbol-wrap svg{width:100%;height:100%}
+
+.torches{position:absolute;bottom:86px;left:0;right:0;display:flex;justify-content:space-between;padding:0 44px;z-index:3;pointer-events:none}
+.torch-unit{position:relative;width:8px}
+.torch-stick{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:5px;height:22px;background:linear-gradient(180deg,#3a2008,#1a0e04);border-radius:2px}
+.fl-base{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);width:20px;height:40px;border-radius:55% 55% 30% 30%;background:radial-gradient(ellipse at 50% 90%,rgba(255,180,20,.9) 0%,rgba(255,100,10,.8) 35%,rgba(220,40,0,.6) 65%,transparent 100%);filter:blur(2px);animation:fl .22s ease-in-out infinite alternate}
+.fl-mid{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);width:13px;height:28px;border-radius:55% 55% 25% 25%;background:radial-gradient(ellipse at 50% 90%,#ffe840 0%,#ffb010 50%,rgba(255,60,0,.4) 100%);filter:blur(1px);animation:fl .18s ease-in-out infinite alternate-reverse}
+.fl-core{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);width:7px;height:18px;border-radius:55% 55% 25% 25%;background:radial-gradient(ellipse at 50% 85%,#fff9e0,#ffe060 60%,transparent 100%);filter:blur(.5px);animation:fl .15s ease-in-out infinite alternate}
+@keyframes fl{from{transform:translateX(-50%) scaleX(1) scaleY(1)}to{transform:translateX(-50%) scaleX(.8) scaleY(1.06) skewX(4deg)}}
+.torch-glow{position:absolute;bottom:-8px;left:50%;transform:translateX(-50%);width:60px;height:22px;border-radius:50%;background:radial-gradient(ellipse,rgba(255,130,0,.4) 0%,transparent 70%)}
+
+.landscape{position:absolute;bottom:0;left:0;right:0;height:180px;z-index:2}
+
+.hero-text{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:54px;z-index:4;background:linear-gradient(to top,#07030a 0%,rgba(7,3,10,.82) 24%,rgba(7,3,10,.3) 52%,transparent 74%)}
+.era-label{font-family:'Cinzel',serif;font-size:9px;letter-spacing:7px;color:rgba(210,155,45,.6);text-transform:uppercase;margin-bottom:12px}
+.main-title{font-family:'Cinzel Decorative',serif;font-size:clamp(30px,7.4vw,52px);font-weight:900;line-height:.95;text-align:center;letter-spacing:1.2px;max-width:92%;overflow-wrap:normal;background:linear-gradient(170deg,#fffde8 0%,#f8e060 15%,#e8aa10 38%,#b87008 58%,#8a5000 75%,#c89020 88%,#f0d050 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 24px rgba(220,140,10,.5)) drop-shadow(0 0 6px rgba(255,200,40,.3))}
+.kingdom-line{font-family:'Cinzel',serif;font-size:12px;letter-spacing:5px;color:#c04c18;font-weight:600;text-transform:uppercase;margin:11px auto 0;text-align:center;line-height:1.55;max-width:520px;padding:0 24px;text-shadow:0 0 20px rgba(200,60,10,.5)}
+
+/* card body */
+.card-body{padding:0 38px 36px;background:linear-gradient(180deg,rgba(120,40,0,.06) 0%,transparent 120px)}
+.ornament{margin:0 -38px 28px;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(200,130,20,.3) 15%,rgba(240,180,40,.9) 42%,rgba(255,220,80,1) 50%,rgba(240,180,40,.9) 58%,rgba(200,130,20,.3) 85%,transparent 100%);position:relative}
+.orn-gem{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#07030a;padding:0 10px;font-size:15px;line-height:1;color:rgba(220,160,30,.7)}
+
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:24px}
+.sbox{padding:15px 18px 14px;border:1px solid rgba(180,110,18,.22);position:relative;overflow:hidden;background:rgba(255,255,255,.015);animation:fadein .6s ease both}
+.sbox:nth-child(1){animation-delay:.08s}.sbox:nth-child(2){animation-delay:.16s}.sbox:nth-child(3){animation-delay:.24s}.sbox:nth-child(4){animation-delay:.32s}
+.sbox::before{content:'';position:absolute;top:0;left:0;width:24px;height:24px;border-top:1px solid rgba(220,160,30,.4);border-left:1px solid rgba(220,160,30,.4)}
+.sbox::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(180,100,10,.07) 0%,transparent 55%);pointer-events:none}
+.slabel{font-family:'Cinzel',serif;font-size:7.5px;letter-spacing:3.5px;font-weight:600;text-transform:uppercase;color:rgba(160,95,20,.5);margin-bottom:9px;display:block}
+.sval{font-family:'Cinzel',serif;font-size:20px;font-weight:700;letter-spacing:1px;line-height:1}
+.c-gold{color:#f0c040;text-shadow:0 0 18px rgba(240,180,40,.3)}
+.c-blood{color:#d44820;text-shadow:0 0 18px rgba(210,60,20,.35)}
+.c-amber{color:#e8b030;text-shadow:0 0 18px rgba(220,160,30,.28)}
+.myth{font-family:'Cinzel',serif;font-size:20px;font-weight:700;letter-spacing:1.5px;line-height:1;background:linear-gradient(90deg,#d04010 0%,#f07020 25%,#f0a030 50%,#f07020 75%,#d04010 100%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 4s linear infinite}
+@keyframes shimmer{from{background-position:0% center}to{background-position:200% center}}
+
+.story{margin-bottom:22px;padding:18px 18px 18px 20px;border-left:2px solid rgba(200,120,20,.45);background:linear-gradient(135deg,rgba(160,70,8,.06) 0%,transparent 65%);position:relative;animation:fadein .7s ease .3s both}
+.story::before{content:'\201C';position:absolute;top:-10px;left:12px;font-family:'Libre Baskerville',serif;font-size:80px;line-height:1;color:rgba(180,80,0,.15);pointer-events:none}
+.story p{font-family:'Libre Baskerville',serif;font-style:italic;font-size:13.5px;line-height:1.92;color:rgba(218,178,92,.85);position:relative;z-index:1}
+
+.deeds{margin-bottom:22px;animation:fadein .7s ease .5s both}
+.sec-head{font-family:'Cinzel',serif;font-size:8px;letter-spacing:5px;color:rgba(155,88,18,.6);text-transform:uppercase;font-weight:600;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.sec-head::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(155,88,18,.35),transparent)}
+.deed{display:flex;align-items:flex-start;gap:14px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.034)}
+.deed:last-child{border-bottom:none}
+.deed-n{font-family:'Cinzel',serif;font-size:10px;font-weight:700;letter-spacing:1px;color:rgba(185,95,22,.45);min-width:18px;margin-top:2px}
+.deed-t{font-family:'Cinzel',serif;font-size:13px;font-weight:400;color:rgba(228,188,96,.88);line-height:1.55;letter-spacing:.3px}
+
+.rule2{height:1px;margin-bottom:22px;background:linear-gradient(90deg,transparent,rgba(180,100,18,.28) 30%,rgba(200,120,20,.45) 50%,rgba(180,100,18,.28) 70%,transparent)}
+
+.astro{margin-bottom:26px;animation:fadein .7s ease .7s both}
+.agrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#d4c8a8;border:1px solid #c8b888}
+.acell{background:#f5f0e8;padding:16px 8px;text-align:center;position:relative;transition:background .25s}
+.acell:hover{background:#ede7d8}
+.acell::after{content:'';position:absolute;top:0;left:15%;right:15%;height:1px;background:linear-gradient(90deg,transparent,rgba(200,130,20,.2),transparent)}
+.aicon{font-size:22px;display:block;margin-bottom:8px;line-height:1}
+.alabel{font-family:'Cinzel',serif;font-size:7px;letter-spacing:2.5px;color:#8a6030;text-transform:uppercase;margin-bottom:5px;display:block}
+.aval{font-family:'Cinzel',serif;font-size:12px;font-weight:600;letter-spacing:.8px;color:#8a4010}
+
+.foot{display:flex;align-items:center;justify-content:space-between;padding-top:16px;border-top:1px solid rgba(160,95,18,.18);animation:fadein .7s ease .9s both}
+.foot-l{font-family:'Cinzel',serif;font-size:8px;letter-spacing:4px;color:rgba(120,70,12,.5);text-transform:uppercase}
+.foot-r{font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;color:rgba(160,95,18,.32)}
+.card-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px}
+.card-btn-save{padding:16px;background:rgba(255,255,255,.06);border:1px solid rgba(200,140,30,.35);color:rgba(220,180,60,.9);font-family:'Cinzel',serif;font-size:9px;letter-spacing:4px;text-transform:uppercase;cursor:pointer;transition:all .2s}
+.card-btn-save:hover{background:rgba(255,255,255,.1);border-color:rgba(200,140,30,.7)}
+.card-btn-share{padding:16px;background:#c03010;border:1px solid transparent;color:#fff5e0;font-family:'Cinzel',serif;font-size:9px;letter-spacing:4px;text-transform:uppercase;cursor:pointer;transition:background .2s}
+.card-btn-share:hover{background:#a02808}
+
+
+@keyframes fadein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── SCROLL SECTIONS (parchment) ── */
+.result-sections{max-width:600px;margin:0 auto;padding:0 16px 100px}
+.rsec{background:#f5f0e8;border-radius:12px;padding:32px 32px 28px;margin-top:18px;position:relative;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.rsec-tag{font-family:'Cinzel',serif;font-size:8px;letter-spacing:5px;color:#8a6030;text-transform:uppercase;margin-bottom:10px}
+.big-rank{font-family:'Cinzel Decorative',serif;font-size:clamp(44px,12vw,80px);font-weight:900;color:#c03010;line-height:1;margin-bottom:2px}
+.rank-sub{font-family:'Cinzel',serif;font-size:14px;font-weight:400;color:#5a4020;margin-bottom:20px;line-height:1.6;letter-spacing:.3px}
+.rank-sub strong{color:#1a1208;font-weight:700}
+
+.rank-boxes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px}
+.rbox{background:#ede7d8;border-radius:8px;padding:16px 20px}
+.rbox-label{font-family:'Cinzel',serif;font-size:7px;letter-spacing:4px;color:#8a6030;text-transform:uppercase;margin-bottom:6px;display:block}
+.rbox-val{font-family:'Cinzel Decorative',serif;font-size:22px;font-weight:700;color:#c03010}
+.rbox-val.dark{color:#2a1e10}
+
+.prog-wrap{position:relative;margin-top:4px}
+.prog-bg{height:12px;background:#ddd6c4;border-radius:6px;position:relative;overflow:hidden}
+.prog-fill{height:100%;background:linear-gradient(90deg,#c03010,#e85020);border-radius:6px;width:0%;transition:width 1.2s cubic-bezier(.4,0,.2,1)}
+.prog-you{position:absolute;right:0;top:-22px;font-family:'Cinzel',serif;font-size:8px;letter-spacing:3px;color:#8a6030}
+.prog-range{display:flex;justify-content:space-between;margin-top:6px}
+.prog-range span{font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;color:#a08050}
+.prog-caption{font-family:'Cinzel',serif;font-size:11px;font-weight:400;color:#7a6040;text-align:center;margin-top:10px;letter-spacing:.5px}
+.prog-caption strong{color:#1a1208;font-weight:700}
+
+.comp-item{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-bottom:1px solid #e0d8c8}
+.comp-item:last-child{border-bottom:none}
+.comp-icon{font-size:28px;flex-shrink:0;width:40px;text-align:center;margin-top:2px}
+.comp-info{flex:1}
+.comp-name{font-family:'Cinzel',serif;font-size:16px;font-weight:700;color:#1a1208;margin-bottom:4px}
+.comp-desc{font-family:'Cinzel',serif;font-size:12px;font-weight:400;color:#6a5030;line-height:1.6;letter-spacing:.2px}
+.comp-rank-wrap{text-align:right;flex-shrink:0}
+.comp-rank{font-family:'Cinzel Decorative',serif;font-size:20px;font-weight:700;color:#c03010;display:block}
+.comp-you{font-family:'Cinzel',serif;font-size:8px;letter-spacing:3px;color:#c03010;display:block;margin-top:2px}
+
+.feat-item{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid #e0d8c8}
+.feat-item:last-child{border-bottom:none}
+.feat-icon{font-size:24px;flex-shrink:0;width:36px;text-align:center;margin-top:2px}
+.feat-text{font-family:'Cinzel',serif;font-size:13px;font-weight:400;color:#2a1e10;line-height:1.6;letter-spacing:.2px}
+.feat-text strong{font-weight:700;color:#1a1208}
+
+.power-item{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid #e0d8c8}
+.power-item:last-child{border-bottom:none}
+.power-icon{font-size:22px;flex-shrink:0;width:36px;text-align:center;margin-top:2px}
+.power-text{font-family:'Cinzel',serif;font-size:13px;font-weight:400;color:#2a1e10;line-height:1.6;letter-spacing:.2px}
+.power-text strong{font-weight:700;color:#1a1208}
+
+.context-box{background:#ede7d8;border-radius:10px;padding:20px 22px;margin-top:18px}
+.context-box p{font-family:'Cinzel',serif;font-size:12px;font-weight:400;color:#5a4020;line-height:1.8;letter-spacing:.2px}
+.context-box strong{color:#1a1208;font-weight:700}
+
+.action-wrap{max-width:600px;margin:20px auto 0;padding:0 16px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn-save{padding:18px;background:#1a1208;color:#e8d8a0;border:none;font-family:'Cinzel',serif;font-size:9px;letter-spacing:4px;text-transform:uppercase;cursor:pointer;transition:background .2s;border-radius:6px}
+.btn-save:hover{background:#2a2010}
+.btn-share{padding:18px;background:#c03010;color:#fff5e0;border:none;font-family:'Cinzel',serif;font-size:9px;letter-spacing:4px;text-transform:uppercase;cursor:pointer;transition:background .2s;border-radius:6px}
+.btn-share:hover{background:#a02808}
+.btn-retry-wrap{max-width:600px;margin:12px auto 0;padding:0 16px}
+.btn-retry{width:100%;padding:15px;background:transparent;border:1px solid rgba(200,130,20,.25);color:rgba(160,95,20,.6);font-family:'Cinzel',serif;font-size:8px;letter-spacing:5px;text-transform:uppercase;cursor:pointer;transition:all .2s;border-radius:6px}
+.btn-retry:hover{border-color:rgba(200,130,20,.5);color:rgba(200,130,20,.9)}
+
+.footer-bar{position:relative;background:rgba(0,0,0,.94);padding:14px 16px;z-index:50;border-top:1px solid rgba(160,95,18,.18)}
+.footer-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;font-family:'Cinzel',serif;font-size:8px;letter-spacing:3px;color:rgba(130,80,18,.62);text-transform:uppercase}
+.footer-inner a{color:rgba(200,155,65,.72);text-decoration:none;transition:color .2s}
+.footer-inner a:hover{color:#f0c040}
+.footer-founder{border:1px solid rgba(200,140,30,.32);padding:7px 10px;color:#fff5e0!important;background:rgba(212,72,32,.16)}
+
+@media(max-width:520px){
+ .site-nav{align-items:flex-start;padding:16px 18px}
+ .nav-links{gap:4px}
+ .nav-link{padding:8px 6px}
+ .nav-founder{padding:9px 10px;letter-spacing:2px}
+ #page-input{padding-top:44px}
+ .input-grid{grid-template-columns:1fr}
+ .card-body{padding:0 22px 28px}
+  .rank-boxes{grid-template-columns:1fr 1fr}
+  .rsec{padding:22px 18px 20px}
+  .action-wrap{grid-template-columns:1fr}
+}
+
+/* compact card deeds */
+.card-deeds{margin:16px 0 18px}
+.card-deed{display:flex;align-items:baseline;gap:10px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.card-deed:last-child{border-bottom:none}
+.card-deed-n{font-family:'Cinzel',serif;font-size:8px;font-weight:700;letter-spacing:1px;color:rgba(185,95,22,.4);min-width:14px}
+.card-deed-t{font-family:'Cinzel',serif;font-size:11px;font-weight:400;color:rgba(220,180,80,.82);line-height:1.5;letter-spacing:.2px}
+/* compact card astro */
+.card-astro-wrap{margin-bottom:18px}
+.card-astro-label{font-family:'Cinzel',serif;font-size:7.5px;letter-spacing:4px;color:rgba(155,88,18,.55);text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.card-astro-label::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(155,88,18,.3),transparent)}
+.card-agrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(160,95,18,.12);border:1px solid rgba(160,95,18,.18)}
+.card-acell{background:#07030a;padding:10px 6px;text-align:center}
+.card-aicon{font-size:16px;display:block;margin-bottom:4px;line-height:1;filter:saturate(.6) brightness(.8)}
+.card-alabel{font-family:'Cinzel',serif;font-size:6px;letter-spacing:2px;color:rgba(130,75,14,.5);text-transform:uppercase;margin-bottom:3px;display:block}
+.card-aval{font-family:'Cinzel',serif;font-size:10px;font-weight:600;letter-spacing:.5px;color:rgba(210,155,50,.88)}
+
+.rank-badge-quote{font-family:'Libre Baskerville',serif;font-style:italic;font-size:13px;color:#8a5030;margin-bottom:14px;letter-spacing:.3px}
+.rank-tier-badge{font-family:'Cinzel',serif;font-size:10px;letter-spacing:5px;color:#c03010;text-transform:uppercase;margin-bottom:14px;font-weight:700}
+.res-badge-wrap{margin:-8px 0 20px;text-align:center}
+#res-badge{font-family:'Libre Baskerville',serif;font-style:italic;font-size:12px;color:rgba(200,150,40,.55);letter-spacing:.5px}
+.exporting-card{width:600px!important;max-width:600px!important;box-shadow:inset 0 0 80px rgba(140,50,0,.08),0 0 1px rgba(200,140,30,.4)!important}
+.exporting-card .hero{height:320px}
+.exporting-card .hero-text{padding-bottom:44px}
+.exporting-card .main-title{font-size:44px;max-width:520px;letter-spacing:1px}
+.exporting-card .kingdom-line{font-size:12px;letter-spacing:2.4px}
+.exporting-card .card-actions,.exporting-card .foot{display:none!important}
+.exporting-card .card-body{padding-bottom:32px}
+
+/* ── Readability pass: keep big headings, make all supporting text legible ── */
+.nav-link,.nav-founder{font-size:10px;letter-spacing:2px;color:rgba(238,195,96,.88)}
+.site-tag,.hero-sub2,.form-label,.load-title,.era-label,.slabel,.sec-head,.rsec-tag,.rbox-label,.prog-you,.prog-range span,.comp-you,.rank-tier-badge,.card-astro-label,.card-alabel,.footer-inner,.foot-l,.foot-r,.btn-retry{letter-spacing:2.2px;color:rgba(218,160,54,.78)}
+.site-tag{font-size:10px}
+.hero-sub2{font-size:10px;line-height:1.7}
+.form-label,.slabel,.rbox-label,.card-astro-label{font-size:9.5px}
+.input-prefix{font-size:12px;color:rgba(224,164,52,.82)}
+.input-hint{font-family:'Libre Baskerville',serif;font-size:12px;line-height:1.65;letter-spacing:.2px;text-transform:none;color:rgba(202,164,92,.82)}
+.error-msg{font-size:11px;letter-spacing:2px;color:#ff6a3a}
+.load-phrase{font-family:'Libre Baskerville',serif;font-size:15px;letter-spacing:.2px;color:rgba(218,178,92,.86)}
+.era-label{font-size:10px}
+.kingdom-line{font-size:13px;letter-spacing:3px;color:#e05a24}
+.story p{font-size:15.5px;line-height:1.9;color:rgba(244,210,132,.94)}
+.card-deed-t,.deed-t{font-family:'Libre Baskerville',serif;font-size:14px;line-height:1.75;letter-spacing:0;color:rgba(238,202,118,.92)}
+.card-deed-n,.deed-n{font-size:10px;color:rgba(214,120,42,.74)}
+.card-alabel{font-size:8px;color:rgba(188,122,36,.78)}
+.card-aval{font-size:12px;color:rgba(238,184,70,.96)}
+.foot-l,.foot-r,.footer-inner{font-size:10px;letter-spacing:2px;color:rgba(178,116,34,.78)}
+.card-btn-save,.card-btn-share,.btn-save,.btn-share,.btn-retry{font-size:10px;letter-spacing:2.5px}
+.rsec-tag{font-size:10px;color:#8c5623}
+.rank-sub,.comp-desc,.feat-text,.power-text,.context-box p,.prog-caption{font-family:'Libre Baskerville',serif;font-size:15px;line-height:1.85;letter-spacing:0;color:#3a2814}
+.comp-name{font-size:17px;color:#130b05}
+.rbox-label{color:#81501f}
+.alabel{font-size:8.5px;color:#7a4e25}
+.footer-inner a{color:rgba(232,176,72,.9)}
+</style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Primary navigation">
+  <a class="nav-mark" href="index.html">Purvajanma</a>
+  <div class="nav-links">
+    <a class="nav-link active" href="index.html">Oracle</a>
+    <a class="nav-link" href="about.html">About</a>
+    <a class="nav-founder" href="https://www.linkedin.com/in/ayush-tanwal/" target="_blank" rel="noopener noreferrer">Founder LinkedIn</a>
+  </div>
+</nav>
+
+<!-- PAGE 1: INPUT -->
+<div id="page-input">
+  <div class="site-tag">Past Life Destiny</div>
+  <div class="hero-title">PURVA<br>JANMA</div>
+  <p class="hero-sub">Enter your birth details. The stars remember who you were — long before this lifetime began.</p>
+  <p class="hero-sub2">Vedic Jyotish · 1000+ years into the past · Your legend, revealed</p>
+  <div class="orn-rule"><span>⬡</span></div>
+  <div class="form-group">
+    <label class="form-label">Your Birth Date</label>
+    <div class="input-row">
+      <span class="input-prefix">📅 DATE</span>
+      <input type="date" id="birthdate" max="2010-01-01" />
+    </div>
+  </div>
+  <div class="input-grid">
+    <div class="form-group">
+      <label class="form-label">Birth Time</label>
+      <div class="input-row">
+        <span class="input-prefix">🕐</span>
+        <input type="time" id="birthtime" />
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Birth City</label>
+      <div class="input-row">
+        <span class="input-prefix">📍</span>
+        <input type="text" id="birthcity" placeholder="Delhi, Mumbai…" />
+      </div>
+    </div>
+  </div>
+  <button class="reveal-btn" id="calcBtn">⚔ &nbsp; Reveal My Destiny &nbsp; ⚔</button>
+  <div id="errorMsg" class="error-msg">Enter your birth date and city to consult the oracle.</div>
+  <p class="input-hint">In your real birth details · Vedic astrology is specific to the minute · The card is worth posting</p>
+</div>
+
+<!-- LOADING -->
+<div id="loading">
+  <div class="load-ring"></div>
+  <div class="load-title">Consulting the Stars</div>
+  <div class="load-phrase" id="loadPhrase">Reading your birth chart…</div>
+</div>
+
+<!-- PAGE 2: RESULT -->
+<div id="page-result">
+  <div id="shareCard" class="card">
+    <div class="hero">
+      <div class="sky"></div>
+      <div class="stars-wrap" id="starsWrap"></div>
+      <div class="shoot"></div>
+      <div class="role-symbol-wrap" id="roleSymbol"></div>
+      <div class="torches">
+        <div class="torch-unit">
+          <div class="torch-stick"></div>
+          <div class="fl-base"></div>
+          <div class="fl-mid" style="animation-delay:.04s"></div>
+          <div class="fl-core" style="animation-delay:.02s"></div>
+          <div class="torch-glow"></div>
+        </div>
+        <div class="torch-unit">
+          <div class="torch-stick"></div>
+          <div class="fl-base" style="animation-delay:.09s"></div>
+          <div class="fl-mid" style="animation-delay:.06s"></div>
+          <div class="fl-core" style="animation-delay:.03s"></div>
+          <div class="torch-glow"></div>
+        </div>
+      </div>
+      <div id="landscapeWrap"></div>
+      <div class="hero-text">
+        <div class="era-label">In Another Era, You Were —</div>
+        <div class="main-title" id="res-title">WAR ORACLE</div>
+        <div class="kingdom-line" id="res-faction">Warlord · Rajput Kingdom · 900 CE</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="ornament"><span class="orn-gem">⬡</span></div>
+      <div class="stats">
+        <div class="sbox"><span class="slabel">Power Rank</span><div class="sval c-gold" id="res-power">TOP 1%</div></div>
+        <div class="sbox"><span class="slabel">Realm</span><div class="sval c-blood" id="res-realm">BLOOD &amp; IRON</div></div>
+        <div class="sbox"><span class="slabel">Dominion Over</span><div class="sval c-amber" id="res-dominion">25,000 SOULS</div></div>
+        <div class="sbox"><span class="slabel">Legacy</span><div class="myth" id="res-legacy">MYTHIC ⚡</div></div>
+      </div>
+      <div class="res-badge-wrap"><span id="res-badge">"Armies wept when you fell"</span></div>
+      <div class="story"><p id="res-story">The stars wove a destiny no ordinary soul could carry…</p></div>
+
+      <div class="card-deeds" id="res-deeds"></div>
+
+      <div class="card-astro-wrap">
+        <div class="card-astro-label">Your Vedic Chart</div>
+        <div class="card-agrid" id="res-astro-card"></div>
+      </div>
+
+      <div class="card-actions">
+        <button class="card-btn-save" id="btnSave">⬇ Save as Image</button>
+        <button class="card-btn-share" id="btnShare">Share on X</button>
+      </div>
+      <div class="foot">
+        <div class="foot-l">Purvajanma · Past Life</div>
+        <div class="foot-r">Destiny Card</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCROLL SECTIONS -->
+  <div class="result-sections">
+    <div class="rsec" id="sec-rank">
+      <div class="rsec-tag">Your Rank Among All Humans Ever</div>
+      <div class="big-rank" id="sec-power-big">TOP 1%</div>
+      <div class="rank-tier-badge" id="sec-tier-label">LEGENDARY</div>
+      <div class="rank-badge-quote" id="sec-badge"></div>
+      <p class="rank-sub" id="sec-rank-desc">You were among the <strong>rarest souls</strong> in recorded history.</p>
+      <div class="rank-boxes">
+        <div class="rbox"><span class="rbox-label">Ranked Higher Than You</span><div class="rbox-val" id="sec-above">A Few Thousand</div></div>
+        <div class="rbox"><span class="rbox-label">Ranked Below You</span><div class="rbox-val dark" id="sec-below">99% of History</div></div>
+      </div>
+      <div class="prog-wrap">
+        <div class="prog-you">YOU</div>
+        <div class="prog-bg"><div class="prog-fill" id="progressFill"></div></div>
+        <div class="prog-range"><span>Lowest Peasant</span><span>God-Emperor</span></div>
+      </div>
+      <p class="prog-caption" id="sec-caption">Your Nakshatra was <strong>Mrigashira</strong> · Ruled by <strong>Mars</strong> · This is why.</p>
+    </div>
+
+    <div class="rsec">
+      <div class="rsec-tag">How You Ranked, Era by Era</div>
+      <div id="sec-comps"></div>
+    </div>
+
+    <div class="rsec">
+      <div class="rsec-tag">The Powers You Commanded</div>
+      <div id="sec-powers"></div>
+    </div>
+
+    <div class="context-box">
+      <p id="sec-context"></p>
+    </div>
+  </div>
+
+  <div class="btn-retry-wrap">
+    <button class="btn-retry" id="btnRetry">← Try Different Birth Details</button>
+  </div>
+</div>
+
+<div class="footer-bar">
+  <div class="footer-inner">
+    <span>Purvajanma · Past Life Destiny</span>
+    <a href="index.html">Oracle</a>
+    <a href="about.html">About</a>
+    <a class="footer-founder" href="https://www.linkedin.com/in/ayush-tanwal/" target="_blank" rel="noopener noreferrer">Founder LinkedIn</a>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script>
+(function() {
+'use strict';
+
+/* ============================================================
+   SVG SYMBOLS — one per role category (12 symbols total)
+============================================================ */
+var SYM = {
+  sword:    '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><line x1="50" y1="10" x2="50" y2="78" stroke="rgba(220,140,20,.7)" stroke-width="2.5"/><polygon points="50,10 44,28 56,28" fill="rgba(220,140,20,.6)"/><line x1="36" y1="62" x2="64" y2="62" stroke="rgba(200,120,20,.6)" stroke-width="2"/><circle cx="50" cy="82" r="5" fill="none" stroke="rgba(200,120,20,.5)" stroke-width="1.5"/><circle cx="50" cy="50" r="44" fill="none" stroke="rgba(200,100,10,.2)" stroke-width="1"><animate attributeName="stroke-opacity" values=".1;.35;.1" dur="3s" repeatCount="indefinite"/></circle></svg>',
+  shield:   '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50,14 L74,24 L74,52 Q74,70 50,82 Q26,70 26,52 L26,24 Z" fill="rgba(180,60,10,.08)" stroke="rgba(220,110,20,.65)" stroke-width="1.8"/><line x1="50" y1="28" x2="50" y2="68" stroke="rgba(220,130,20,.45)" stroke-width="1"/><line x1="34" y1="48" x2="66" y2="48" stroke="rgba(220,130,20,.45)" stroke-width="1"/><circle cx="50" cy="50" r="44" fill="none" stroke="rgba(200,80,10,.18)" stroke-width="1"><animate attributeName="r" values="44;47;44" dur="3.5s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".12;.3;.12" dur="3.5s" repeatCount="indefinite"/></circle></svg>',
+  crown:    '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="cg" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#fff9e0"/><stop offset="40%" stop-color="#ffd840"/><stop offset="100%" stop-color="#b86010"/></radialGradient></defs><path d="M20,72 L20,44 L35,58 L50,22 L65,58 L80,44 L80,72 Z" fill="rgba(200,140,20,.15)" stroke="rgba(230,170,30,.7)" stroke-width="1.8" stroke-linejoin="round"/><circle cx="50" cy="22" r="5" fill="url(#cg)"/><circle cx="20" cy="44" r="4" fill="rgba(240,180,30,.6)"/><circle cx="80" cy="44" r="4" fill="rgba(240,180,30,.6)"/><rect x="20" y="72" width="60" height="6" rx="1" fill="rgba(200,140,20,.3)" stroke="rgba(230,170,30,.5)" stroke-width="1"/><circle cx="50" cy="50" r="44" fill="none" stroke="rgba(220,160,20,.15)" stroke-width="1.5"><animate attributeName="stroke-opacity" values=".1;.3;.1" dur="4s" repeatCount="indefinite"/></circle></svg>',
+  scroll:   '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect x="28" y="20" width="44" height="58" rx="4" fill="rgba(200,150,30,.08)" stroke="rgba(200,140,20,.55)" stroke-width="1.5"/><ellipse cx="28" cy="49" rx="8" ry="30" fill="rgba(180,120,10,.1)" stroke="rgba(200,130,20,.4)" stroke-width="1"/><ellipse cx="72" cy="49" rx="8" ry="30" fill="rgba(180,120,10,.1)" stroke="rgba(200,130,20,.4)" stroke-width="1"/><line x1="38" y1="36" x2="62" y2="36" stroke="rgba(200,140,20,.4)" stroke-width="1"/><line x1="38" y1="44" x2="62" y2="44" stroke="rgba(200,140,20,.3)" stroke-width="1"/><line x1="38" y1="52" x2="62" y2="52" stroke="rgba(200,140,20,.3)" stroke-width="1"/><line x1="38" y1="60" x2="55" y2="60" stroke="rgba(200,140,20,.2)" stroke-width="1"/><circle cx="50" cy="50" r="44" fill="none" stroke="rgba(180,130,10,.15)" stroke-width="1"><animate attributeName="stroke-opacity" values=".08;.25;.08" dur="4s" repeatCount="indefinite"/></circle></svg>',
+  flame:    '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50,18 Q36,34 38,50 Q40,62 50,68 Q60,62 62,50 Q64,34 50,18Z" fill="rgba(220,100,20,.25)" stroke="rgba(240,140,20,.6)" stroke-width="1.5"/><path d="M50,30 Q43,42 44,52 Q46,60 50,64 Q54,60 56,52 Q57,42 50,30Z" fill="rgba(255,180,20,.3)"/><path d="M50,78 Q30,74 26,58 Q22,40 36,28 Q30,44 38,54 Q44,62 50,64 Q56,62 62,54 Q70,44 64,28 Q78,40 74,58 Q70,74 50,78Z" fill="rgba(200,80,10,.15)" stroke="rgba(220,110,20,.4)" stroke-width="1"/><circle cx="50" cy="50" r="44" fill="none" stroke="rgba(220,100,10,.2)" stroke-width="1.5"><animate attributeName="r" values="44;47;44" dur="3s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".15;.35;.15" dur="3s" repeatCount="indefinite"/></circle></svg>',
+  moon:     '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="mg" cx="35%" cy="32%" r="65%"><stop offset="0%" stop-color="#fffef0"/><stop offset="25%" stop-color="#f8e878"/><stop offset="55%" stop-color="#c89010"/><stop offset="100%" stop-color="#5a3a04"/></radialGradient></defs><circle cx="50" cy="50" r="28" fill="url(#mg)"/><circle cx="42" cy="44" r="4" fill="rgba(0,0,0,.07)"/><circle cx="57" cy="56" r="3" fill="rgba(0,0,0,.06)"/><circle cx="55" cy="38" r="3.5" fill="rgba(0,0,0,.05)"/><circle cx="50" cy="50" r="34" fill="none" stroke="rgba(220,180,40,.2)" stroke-width="1"/><circle cx="50" cy="50" r="42" fill="none" stroke="rgba(220,160,30,.15)" stroke-width="1.5"><animate attributeName="r" values="42;46;42" dur="4s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".2;.04;.2" dur="4s" repeatCount="indefinite"/></circle></svg>',
+  sun:      '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="sg" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#fff9e0"/><stop offset="35%" stop-color="#ffd840"/><stop offset="100%" stop-color="#b86010"/></radialGradient></defs><g stroke="rgba(240,160,20,.45)" stroke-width="1.6"><line x1="50" y1="8" x2="50" y2="19"/><line x1="50" y1="81" x2="50" y2="92"/><line x1="8" y1="50" x2="19" y2="50"/><line x1="81" y1="50" x2="92" y2="50"/><line x1="20" y1="20" x2="27" y2="27"/><line x1="73" y1="73" x2="80" y2="80"/><line x1="80" y1="20" x2="73" y2="27"/><line x1="20" y1="80" x2="27" y2="73"/></g><circle cx="50" cy="50" r="24" fill="url(#sg)"/><circle cx="44" cy="44" r="9" fill="rgba(255,255,220,.25)"/><circle cx="50" cy="50" r="38" fill="none" stroke="rgba(240,160,20,.18)" stroke-width="1.5"><animate attributeName="r" values="38;43;38" dur="3s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".2;.04;.2" dur="3s" repeatCount="indefinite"/></circle></svg>',
+  serpent:  '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50,20 Q70,30 68,48 Q66,62 50,66 Q34,62 32,48 Q30,30 50,20Z" fill="none" stroke="rgba(60,180,120,.55)" stroke-width="1.8"/><path d="M50,66 Q44,76 46,84" fill="none" stroke="rgba(60,180,120,.5)" stroke-width="1.8"/><ellipse cx="46" cy="87" rx="6" ry="4" fill="rgba(40,160,100,.4)" stroke="rgba(60,190,130,.6)" stroke-width="1"/><circle cx="44" cy="27" r="2" fill="rgba(255,220,60,.7)"/><circle cx="56" cy="27" r="2" fill="rgba(255,220,60,.7)"/><path d="M47,22 L44,17 M53,22 L56,17" stroke="rgba(60,190,130,.5)" stroke-width="1.2"/><circle cx="50" cy="50" r="44" fill="none" stroke="rgba(40,160,100,.15)" stroke-width="1" stroke-dasharray="5 7"><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite"/></circle></svg>',
+  hourglass:'<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M30,18 L70,18 L50,50 L70,82 L30,82 L50,50 Z" fill="none" stroke="rgba(140,110,200,.65)" stroke-width="1.8"/><path d="M31,19 L50,50 L69,19 Z" fill="rgba(120,90,180,.12)"/><path d="M31,81 L50,50 L69,81 Z" fill="rgba(120,90,180,.08)"/><line x1="30" y1="18" x2="70" y2="18" stroke="rgba(160,130,210,.5)" stroke-width="2"/><line x1="30" y1="82" x2="70" y2="82" stroke="rgba(160,130,210,.5)" stroke-width="2"/><circle cx="50" cy="50" r="3" fill="rgba(180,150,230,.5)"/><circle cx="50" cy="50" r="44" fill="none" stroke="rgba(140,110,200,.12)" stroke-width="1.5" stroke-dasharray="4 6"><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="22s" repeatCount="indefinite"/></circle></svg>',
+  lotus:    '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><ellipse cx="50" cy="58" rx="9" ry="14" fill="rgba(200,150,20,.2)" stroke="rgba(220,170,30,.55)" stroke-width="1.5"/><ellipse cx="50" cy="58" rx="9" ry="14" fill="rgba(200,150,20,.15)" stroke="rgba(220,160,30,.45)" stroke-width="1.2" transform="rotate(36 50 58)"/><ellipse cx="50" cy="58" rx="9" ry="14" fill="rgba(200,150,20,.12)" stroke="rgba(220,160,30,.4)" stroke-width="1.2" transform="rotate(72 50 58)"/><ellipse cx="50" cy="58" rx="9" ry="14" fill="rgba(200,150,20,.12)" stroke="rgba(220,160,30,.4)" stroke-width="1.2" transform="rotate(108 50 58)"/><ellipse cx="50" cy="58" rx="9" ry="14" fill="rgba(200,150,20,.12)" stroke="rgba(220,160,30,.4)" stroke-width="1.2" transform="rotate(144 50 58)"/><circle cx="50" cy="58" r="8" fill="rgba(220,170,30,.3)" stroke="rgba(240,190,40,.6)" stroke-width="1.2"/><circle cx="50" cy="50" r="44" fill="none" stroke="rgba(200,160,20,.15)" stroke-width="1"><animate attributeName="stroke-opacity" values=".1;.28;.1" dur="4s" repeatCount="indefinite"/></circle></svg>',
+  spear:    '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><line x1="50" y1="82" x2="50" y2="30" stroke="rgba(200,140,20,.55)" stroke-width="2"/><path d="M50,30 L44,46 L50,12 L56,46 Z" fill="rgba(220,160,30,.3)" stroke="rgba(230,170,30,.65)" stroke-width="1.2"/><line x1="38" y1="58" x2="62" y2="58" stroke="rgba(200,130,20,.4)" stroke-width="1.5"/><line x1="35" y1="54" x2="38" y2="58" stroke="rgba(200,130,20,.35)" stroke-width="1.2"/><line x1="65" y1="54" x2="62" y2="58" stroke="rgba(200,130,20,.35)" stroke-width="1.2"/><circle cx="50" cy="50" r="44" fill="none" stroke="rgba(200,120,10,.18)" stroke-width="1"><animate attributeName="r" values="44;47;44" dur="3.8s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".1;.28;.1" dur="3.8s" repeatCount="indefinite"/></circle></svg>',
+  eye:      '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M12,50 Q30,28 50,28 Q70,28 88,50 Q70,72 50,72 Q30,72 12,50Z" fill="rgba(180,120,20,.08)" stroke="rgba(220,160,30,.55)" stroke-width="1.5"/><circle cx="50" cy="50" r="14" fill="rgba(160,100,10,.15)" stroke="rgba(200,140,20,.5)" stroke-width="1.2"/><circle cx="50" cy="50" r="7" fill="rgba(180,120,10,.3)"/><circle cx="54" cy="46" r="2.5" fill="rgba(255,240,180,.4)"/><line x1="50" y1="10" x2="50" y2="22" stroke="rgba(200,140,20,.3)" stroke-width="1"/><line x1="50" y1="78" x2="50" y2="90" stroke="rgba(200,140,20,.3)" stroke-width="1"/><circle cx="50" cy="50" r="44" fill="none" stroke="rgba(200,140,20,.12)" stroke-width="1"><animate attributeName="stroke-opacity" values=".08;.22;.08" dur="5s" repeatCount="indefinite"/></circle></svg>'
+};
+
+/* ============================================================
+   108 ROLES  (27 Nakshatras × 4 Padas)
+   symbol key maps to SYM above
+============================================================ */
+var ROLES_108 = {
+  "Ashwini_1":{"name":"Iron Surgeon","realm":"BLOOD & MERCY","sym":"sword","ctx":"Sushruta's battlefield surgeons saved more Maurya soldiers than any cavalry charge. Fewer than 200 men per generation were trained to operate under arrow fire without flinching."},
+  "Ashwini_2":{"name":"Dust Commander","realm":"THUNDER & DUST","sym":"spear","ctx":"Ancient Indian cavalry was the fastest and most expensive arm of any empire. Its commander had to master horses, terrain, supply, and nerve simultaneously — in that order."},
+  "Ashwini_3":{"name":"First Blood","realm":"IRON & LIGHTNING","sym":"spear","ctx":"The officer who led the opening charge was the most decorated and most mortal rank in ancient Indian warfare. Survivors of ten engagements were believed to carry divine protection."},
+  "Ashwini_4":{"name":"Wind Courier","realm":"WIND & CROWN","sym":"eye","ctx":"The Maurya postal network crossed 10,000 km. The emperor's fastest rider carried intelligence that decided wars — and knew more classified information than any minister of state."},
+
+  "Bharani_1":{"name":"Verdict Keeper","realm":"IRON & JUDGMENT","sym":"sword","ctx":"In Chanakya's judicial system, one man alone held final authority over capital sentences. His neutrality was the only wall between imperial justice and political murder."},
+  "Bharani_2":{"name":"Stone Warden","realm":"IRON & CHAINS","sym":"shield","ctx":"The great prison fortresses — Gwalior, Daulatabad — held deposed kings and rival heirs. Their wardens held more state secrets than any minister, and served until death."},
+  "Bharani_3":{"name":"Ash Inquisitor","realm":"FIRE & RECKONING","sym":"flame","ctx":"The Lord Inquisitor answered only to the emperor. He could detain, interrogate, and execute any man short of royalty — without appeal, without record, without regret."},
+  "Bharani_4":{"name":"Pyre Sovereign","realm":"ASH & PASSAGE","sym":"flame","ctx":"The master of royal cremation rites held power over dynastic legitimacy itself. A contested cremation could void a succession. He decided who burned as king — and who burned as a traitor."},
+
+  "Krittika_1":{"name":"Sun Priest","realm":"GOLD & SCRIPTURE","sym":"flame","ctx":"Surya temple priests in the Gupta era held landholdings larger than most kingdoms. Their theological rulings were solar law. No emperor was crowned without their fire."},
+  "Krittika_2":{"name":"Singular Emperor","realm":"GOLD & DOMINION","sym":"crown","ctx":"In 3,000 years of South Asian history, fewer than 80 rulers held uncontested imperial sovereignty — answering to no king above them. You were one of those 80."},
+  "Krittika_3":{"name":"Flame Purifier","realm":"FLAME & DOMINION","sym":"flame","ctx":"Certain historical figures rose not to conquer but to dismantle — Chandragupta ending the Nandas, Ashoka dismantling Brahmin legal supremacy. They burned what was rotten and rebuilt on the ash."},
+  "Krittika_4":{"name":"Undying Fire","realm":"ASH & ETERNITY","sym":"flame","ctx":"Vedic sacred fires documented as burning uninterrupted for 2,000 years still exist in India today. The lineages who tended them held a continuity no dynasty could claim or seize."},
+
+  "Rohini_1":{"name":"Stone Dreamer","realm":"STONE & LEGACY","sym":"scroll","ctx":"The designers of Hampi, Fatehpur Sikri, and the Brihadeeswara temple are remembered in stone for a millennium. Their cities outlasted every emperor who commissioned them."},
+  "Rohini_2":{"name":"Gold Vault","realm":"GOLD & VAULT","sym":"crown","ctx":"The Royal Treasurer of the Maurya empire administered more gold than most modern central banks. One man. One lifetime. One vault that funded the conquest of a subcontinent."},
+  "Rohini_3":{"name":"Grain Lord","realm":"GRAIN & POWER","sym":"lotus","ctx":"Whoever held the granaries held the empire's survival. During famines, the Master of Granaries decided which cities received supply and which were left to starve. No general held more lethal authority."},
+  "Rohini_4":{"name":"Silk Throne","realm":"SILK & GOLD","sym":"scroll","ctx":"Ancient Indian Shrenis — merchant guilds — controlled trade from Rome to China. Their supreme Guild Master rivalled kings in effective power and surpassed every one of them in wealth."},
+
+  "Mrigashira_1":{"name":"Bleeding Edge General","realm":"IRON & FRONTIER","sym":"spear","ctx":"Frontier generals commanded where maps ended — no supply lines, no reinforcement, no orders. They built empires from the outside in, one unnamed river crossing at a time."},
+  "Mrigashira_2":{"name":"Hunt Master","realm":"FOREST & IRON","sym":"spear","ctx":"Imperial hunts were military intelligence operations. The Royal Hunt Master knew terrain, population, and hidden movement routes better than any general who relied on maps."},
+  "Mrigashira_3":{"name":"Horizon Commander","realm":"DUST & HORIZON","sym":"spear","ctx":"The Chola commanders who sailed to Java and Sumatra in the 11th century were pushing beyond every existing map. They built new ones — and named what they found."},
+  "Mrigashira_4":{"name":"Shadow Vanguard","realm":"SHADOW & STEEL","sym":"eye","ctx":"The advance guard captain moved days ahead of the army — mapping, clearing, and eliminating threats before 50,000 men arrived. Without him, armies walked blind into ambush."},
+
+  "Ardra_1":{"name":"Fort Breaker","realm":"STONE & RUIN","sym":"sword","ctx":"History records fewer than 30 commanders in India with a documented reputation for taking impregnable fortresses. Each one rewrote the strategic map of an empire."},
+  "Ardra_2":{"name":"Storm Admiral","realm":"STORM & SEA","sym":"shield","ctx":"The Chola navy at its peak commanded 400 warships across the Indian Ocean. The Admiral who held that fleet held Southeast Asia. Fewer than 15 men ever carried this title."},
+  "Ardra_3":{"name":"Dynasty Breaker","realm":"ASH & LIGHTNING","sym":"flame","ctx":"A handful of commanders in Indian history destroyed not just armies but the dynasties behind them. Chandragupta ended the Nandas in a single campaign. You did the same to yours."},
+  "Ardra_4":{"name":"Monsoon Warlord","realm":"RAIN & IRON","sym":"shield","ctx":"The Marathas turned monsoon warfare into an art. Their storm generals used rain, flood, and mud as weapons — fighting seasons when every other army sheltered. They were nearly unbeatable."},
+
+  "Punarvasu_1":{"name":"Ash Rebuilder","realm":"STONE & RENEWAL","sym":"crown","ctx":"After every great collapse, one man rebuilt what others destroyed. Rebuilders are rarer than conquerors in history — and their work lasts three times as long."},
+  "Punarvasu_2":{"name":"Returned Exile","realm":"DUST & TRIUMPH","sym":"crown","ctx":"Most exiles die in exile. The ones who returned and won became the most celebrated sovereigns of their age — because reclaiming a throne requires more than armies. It requires the empire to want you back."},
+  "Punarvasu_3":{"name":"War Ender","realm":"SILK & LIGHT","sym":"lotus","ctx":"Negotiating peace between kingdoms in open war required more raw courage than commanding the armies themselves. Most peacemakers in Indian history were assassinated. The ones who succeeded changed the map permanently."},
+  "Punarvasu_4":{"name":"Road Prophet","realm":"DUST & FIRE","sym":"flame","ctx":"Adi Shankaracharya walked the entire subcontinent, debated every major philosopher and religious authority, and rewrote India's theological map — all before the age of 32, with no army behind him."},
+
+  "Pushya_1":{"name":"Ear of God","realm":"SACRED & THRONE","sym":"lotus","ctx":"The court High Priest consecrated kings, annulled marriages, and declared wars sacred or profane. No emperor in Indian history moved on any major decision without this man's seal of divine approval."},
+  "Pushya_2":{"name":"Last Shield","realm":"IRON & BLOOD","sym":"shield","ctx":"The Palace Guard commander slept closest to the emperor. He was the last line between the throne and assassination. In documented Indian history, no emperor died violently while his guard commander still lived."},
+  "Pushya_3":{"name":"Silent Regent","realm":"IRON & REGENCY","sym":"crown","ctx":"When emperors died leaving child heirs, one man held all power without the title. Most Lord Protectors in Indian history kept their oath. The ones who did not founded new dynasties on the spot."},
+  "Pushya_4":{"name":"Law's Architect","realm":"SCRIPTURE & STONE","sym":"scroll","ctx":"The Dharmashastra scholars who codified law for Chandragupta, Ashoka, and the Guptas shaped how a billion people organised society — for two thousand years after their deaths."},
+
+  "Ashlesha_1":{"name":"Shadow State","realm":"INK & DARKNESS","sym":"eye","ctx":"Chanakya's Arthashastra dedicates five chapters to intelligence operations. In the Maurya empire, the spymaster was the second most powerful man alive. His name appears in no public record."},
+  "Ashlesha_2":{"name":"Venom Court","realm":"VENOM & SILK","sym":"serpent","ctx":"The Vishakanyas of the Maurya court are documented, not legendary. The court poisoner held life and death without ever drawing a blade — operating inside the palace for decades, invisible."},
+  "Ashlesha_3":{"name":"Cipher Throne","realm":"INK & CIPHER","sym":"scroll","ctx":"Mlecchita Vikalpa — ancient Indian cryptography — had 64 documented cipher systems. The master who knew all of them was the only man who could read the emperor's most secret correspondence."},
+  "Ashlesha_4":{"name":"The Unnamed","realm":"VOID & THRONE","sym":"eye","ctx":"Every great emperor had one adviser who appears in no record under his real name — who influenced every policy and is credited in none. Historians call this role The Shadow. It is not a metaphor."},
+
+  "Magha_1":{"name":"Chakravartin","realm":"GOLD & COSMOS","sym":"sun","ctx":"The wheel-turning universal sovereign is the highest title in Indian political philosophy. Ashoka claimed it. Samudragupta came closest to earning it militarily. Fewer than 8 rulers in 3,000 years were recognised as one."},
+  "Magha_2":{"name":"Last Flame","realm":"GOLD & TWILIGHT","sym":"crown","ctx":"To be the final emperor of a great dynasty is not failure — it is the heaviest destiny. The last Maurya, last Gupta, last great Chola. They did not fail their empires. Their ages simply ended around them."},
+  "Magha_3":{"name":"Uncrowned Power","realm":"GOLD & SHADOW","sym":"crown","ctx":"The Regent who ruled in place of a child-king held every power of the emperor but none of the title. History's most powerful uncrowned men — and the most dangerous once the king came of age."},
+  "Magha_4":{"name":"Blood Chronicler","realm":"BLOOD & LINEAGE","sym":"serpent","ctx":"In dynasties where legitimacy was everything, one man guarded the lineage records and adjudicated succession. He decided — quietly and finally — who had royal blood and who did not."},
+
+  "Purva Phalguni_1":{"name":"Silk Patron","realm":"SILK & ETERNITY","sym":"lotus","ctx":"The courts of Vijayanagara and the Mughals produced the finest art in Asian history. The Patron who funded it shaped what a civilisation remembered of itself — more lastingly than any conquest."},
+  "Purva Phalguni_2":{"name":"Peace Architect","realm":"SILK & SILENCE","sym":"scroll","ctx":"Three documented diplomatic missions in ancient India ended wars that armies could not. The men who led them are among the least celebrated and most consequential figures in Indian history."},
+  "Purva Phalguni_3":{"name":"Invisible Crown","realm":"DESIRE & DOMINION","sym":"moon","ctx":"In the Mughal zenana and the Vijayanagara inner court, the emperor's closest companion held influence no general could match — and left fewer records than any soldier who died in battle."},
+  "Purva Phalguni_4":{"name":"Ceremony Master","realm":"GOLD & ILLUSION","sym":"lotus","ctx":"Every coronation, war declaration, and peace treaty was choreographed by one man who understood that ceremony was power made visible. He made kings look inevitable — or merely human. That difference decided dynasties."},
+
+  "Uttara Phalguni_1":{"name":"Empire's Spine","realm":"STONE & ORDER","sym":"scroll","ctx":"The greatest empires ran not on swords but on grain accounts, tax records, and road maintenance. The Grand Administrator made civilisation materially possible. No emperor could function without him."},
+  "Uttara Phalguni_2":{"name":"Law Above Kings","realm":"GOLD & LAW","sym":"scroll","ctx":"In the Maurya and Gupta empires, the Chief Justice interpreted dharma as binding imperial law. Emperors could be — and on documented occasions were — overruled. This man made the law above the crown."},
+  "Uttara Phalguni_3":{"name":"Eternal Lawgiver","realm":"SCRIPTURE & TIME","sym":"scroll","ctx":"Manu, Yajnavalkya, Chanakya — the men whose legal texts governed India for 2,000 years. Fewer than 20 such figures exist in all of recorded history. Their names outlived every dynasty they served."},
+  "Uttara Phalguni_4":{"name":"Road Sovereign","realm":"DUST & STONE","sym":"spear","ctx":"The Maurya road network spanned 10,000 km — the arteries of an empire. Its Superintendent determined how fast armies moved, how reliably grain arrived, and how long the empire could survive a siege."},
+
+  "Hasta_1":{"name":"Wall Maker","realm":"STONE & PERMANENCE","sym":"scroll","ctx":"The engineers of Golconda, Chittorgarh, and Gwalior designed fortifications that held against armies 100,000 strong. Their calculations were never written down. They lived in fewer than 50 heads per generation."},
+  "Hasta_2":{"name":"Throne's Physician","realm":"MEDICINE & GOLD","sym":"serpent","ctx":"The emperor's personal physician held the emperor's life daily. Charaka and Sushruta trained men who performed rhinoplasty and cataract surgery 1,800 years before European medicine considered either procedure possible."},
+  "Hasta_3":{"name":"Gold Stamp","realm":"GOLD & PRECISION","sym":"crown","ctx":"Every coin minted in an ancient empire carried the empire's credibility. The Mint Master controlled economic reality — inflation, war financing, trade value — for an entire civilisation simultaneously."},
+  "Hasta_4":{"name":"Edge Cartographer","realm":"INK & HORIZON","sym":"scroll","ctx":"Before instruments, the cartographer's map was the empire itself. Wrong maps lost armies of 50,000. Right maps built empires that lasted centuries. The great Indian cartographers are almost entirely anonymous."},
+
+  "Chitra_1":{"name":"Immortal Builder","realm":"STONE & VISION","sym":"scroll","ctx":"The architects of Hampi, Mohenjo-daro, and Nalanda shaped how millions lived for centuries after their names were forgotten. Their buildings are the only biography history allowed them."},
+  "Chitra_2":{"name":"Siege Architect","realm":"STONE & WAR","sym":"shield","ctx":"A great fortress in ancient India could hold against 100,000 men indefinitely. The military architects of Golconda and Daulatabad understood siege warfare so completely they made it pointless to attempt."},
+  "Chitra_3":{"name":"God Sculptor","realm":"STONE & DIVINITY","sym":"lotus","ctx":"Pallava and Chola temple sculptors were considered semi-divine. Their carvings were simultaneously acts of worship, political propaganda, and cosmological argument — carved once, permanent forever."},
+  "Chitra_4":{"name":"Sacred Geometer","realm":"LIGHT & PATTERN","sym":"eye","ctx":"The Shulba Sutras contain the first documented statement of the Pythagorean theorem — 500 years before Euclid. Their masters designed every temple in India using geometry Europe had not yet conceived."},
+
+  "Swati_1":{"name":"Silk Road King","realm":"GOLD & WIND","sym":"scroll","ctx":"The merchant lord who controlled the Silk Road's Indian section was richer than most emperors and answered to none of them. His name survives only in Roman trade records — and in the goods that outlasted his empire."},
+  "Swati_2":{"name":"Free City King","realm":"WIND & WALLS","sym":"crown","ctx":"India's merchant republics — the Gana Sanghas — elected their own governors and defied imperial authority for centuries. To lead one was to prove that freedom could survive surrounded by empires on all sides."},
+  "Swati_3":{"name":"Sea Fortune","realm":"SEA & GOLD","sym":"shield","ctx":"The Satavahana and Chola maritime networks stretched across Southeast Asia decades before European ships reached India. Their admirals were simultaneously warriors, diplomats, and the wealthiest men alive."},
+  "Swati_4":{"name":"Caravan Sovereign","realm":"DUST & PROFIT","sym":"spear","ctx":"The caravan masters who moved goods from Taxila to Madurai commanded private armies, employed thousands, and moved more annual wealth than most provincial governors ever managed to tax in a lifetime."},
+
+  "Vishakha_1":{"name":"Grand Vizier","realm":"SILK & DOMINION","sym":"scroll","ctx":"The Wazir-e-Azam was the second most powerful man in any empire — and in several Hindu ones too. Akbar's Todar Mal redesigned the entire Mughal tax system from this desk. Birbal made policy through wit alone."},
+  "Vishakha_2":{"name":"Kingmaker","realm":"SHADOW & CROWN","sym":"eye","ctx":"The Kingmaker never wore the crown — he chose who did. Chanakya made Chandragupta emperor. The Peshwas made the Marathas supreme. The man behind the throne always held more real power than the man sitting on it."},
+  "Vishakha_3":{"name":"Iron Counsel","realm":"IRON & MIND","sym":"scroll","ctx":"The emperor's inner council had one supreme voice whose assessment shaped every major decision of state: war, succession, taxation, alliance. This man outlasted kings. Sometimes he outlasted dynasties."},
+  "Vishakha_4":{"name":"Line Crosser","realm":"AMBITION & BLOOD","sym":"sword","ctx":"Every dynasty change required one military commander to raise his standard against the throne he served. These men remade the ancient world. Almost none survived the decade that followed."},
+
+  "Anuradha_1":{"name":"Rearguard","realm":"IRON & HONOUR","sym":"shield","ctx":"The rearguard general who covered a retreating army held the most dangerous and least celebrated command in ancient warfare. The best generals in history chose this position willingly. None are famous for it."},
+  "Anuradha_2":{"name":"Last Stand","realm":"BLOOD & LEGEND","sym":"shield","ctx":"Maharana Pratap at Haldighati. Prithviraj Chauhan at Tarain. Some commanders fought knowing they would lose — and fought anyway. These men became immortal precisely because they never calculated survival."},
+  "Anuradha_3":{"name":"Alliance Weaver","realm":"SILK & STEEL","sym":"scroll","ctx":"Every great empire ran on alliances with vassal kings, merchant guilds, and religious orders. The man who maintained those bonds held the empire together invisibly — and was blamed first when any one of them frayed."},
+  "Anuradha_4":{"name":"Unbroken Wall","realm":"STONE & WILL","sym":"shield","ctx":"Some forts in Indian history were never taken — because one commander held them for 20 or 30 years through siege, starvation, and successive betrayals with the same ferocity every single day. These men are almost unknown."},
+
+  "Jyeshtha_1":{"name":"Supreme Senapati","realm":"IRON & DOMINION","sym":"spear","ctx":"Chandragupta's Senapati commanded 600,000 soldiers, 9,000 war elephants, and 30,000 cavalry across a territory larger than modern India. One man. One command. One chain that held an empire together."},
+  "Jyeshtha_2":{"name":"Voice of Thrones","realm":"GOLD & COUNSEL","sym":"scroll","ctx":"Every emperor's inner council had one chief voice — one man whose opinion shaped war, succession, and taxation simultaneously. This adviser outlasted kings. Sometimes he outlasted entire dynasties."},
+  "Jyeshtha_3":{"name":"Memory of Empires","realm":"WISDOM & STONE","sym":"lotus","ctx":"The great elder statesmen who served three or four successive dynasties held institutional memory no single king could replace. When they died, empires made catastrophic errors within a generation."},
+  "Jyeshtha_4":{"name":"Denied Prince","realm":"SHADOW & IRON","sym":"sword","ctx":"The eldest son passed over for succession became the most dangerous man in any empire. History is full of them. The ones who moved too soon died. The ones who waited long enough — took everything back."},
+
+  "Mula_1":{"name":"Righteous Destroyer","realm":"ASH & JUSTICE","sym":"flame","ctx":"Some rulers rose specifically to end corrupt dynasties — not just conquer them. They burned what was rotten first. The ones who also rebuilt after are the rarest figures in the entirety of Indian political history."},
+  "Mula_2":{"name":"Age Ender","realm":"DUST & CROWN","sym":"crown","ctx":"To be the final emperor of a great civilisation is not failure. The last Maurya, last Gupta, last Pallava. They did not fail their empires. Their ages ended around them — and they carried that weight alone."},
+  "Mula_3":{"name":"Forbidden Archivist","realm":"ASH & MEMORY","sym":"scroll","ctx":"When empires burned libraries, certain scholars hid texts in temple walls and forest hermitages — or memorised tens of thousands of verses. These men kept civilisation alive through the dark between ages."},
+  "Mula_4":{"name":"Rebel Emperor","realm":"BLOOD & ROOTS","sym":"sword","ctx":"The rebel general who became the new empire is history's most complex figure. Most were destroyed within a decade. Shivaji was not. He became the thing he rebelled against — and made it better."},
+
+  "Purva Ashadha_1":{"name":"The Undefeated","realm":"IRON & GLORY","sym":"sword","ctx":"Bajirao I won 41 battles across 20 years without a single defeat. Samudragupta campaigned across the entire subcontinent and lost nothing. These commanders did not simply win — they made defeat structurally impossible."},
+  "Purva Ashadha_2":{"name":"Ocean Admiral","realm":"SEA & CONQUEST","sym":"shield","ctx":"The Chola admirals of the 11th century sailed to Java and Sumatra commanding fleets of 800 ships. No European navy matched this scale for another 400 years. Their names survive in Southeast Asian temple inscriptions."},
+  "Purva Ashadha_3":{"name":"Four Horizons King","realm":"IRON & PROCLAMATION","sym":"sun","ctx":"The Digvijaya — formal conquest of all four cardinal directions — was a claim of universal sovereignty. Samudragupta completed it. So did Rajendra Chola. Fewer than 12 rulers in 3,000 years attempted it. Even fewer finished."},
+  "Purva Ashadha_4":{"name":"First Blood","realm":"BLOOD & FIRST","sym":"spear","ctx":"The vanguard commander struck first in every engagement. The highest casualty rate of any rank in ancient armies. The highest decoration rate of any rank. The same men held both records at the same time."},
+
+  "Uttara Ashadha_1":{"name":"The Never-Broken","realm":"GOLD & FOREVER","sym":"sun","ctx":"The genuinely unconquered sovereign is the rarest figure in political history — not just undefeated in battle, but undefeated in the judgment of history 2,000 years later. You were one of fewer than a dozen."},
+  "Uttara Ashadha_2":{"name":"All-Horizon Victor","realm":"IRON & HORIZON","sym":"sun","ctx":"Samudragupta's Allahabad Pillar lists every king who submitted to him by name. Rajendra Chola's inscription records victories from Ceylon to the Malay coast. These men ran out of enemies."},
+  "Uttara Ashadha_3":{"name":"World Emperor","realm":"GOLD & COSMOS","sym":"crown","ctx":"The Samrat — one who rules all — is not a title claimed but a recognition granted by the submission of every surrounding power. Almost no ruler in Indian history achieved this without destroying at least one kingdom for refusing."},
+  "Uttara Ashadha_4":{"name":"Wheel Turner","realm":"GOLD & AGES","sym":"sun","ctx":"Ashoka is the only ruler in South Asian history universally acknowledged as Chakravartin by both contemporary and subsequent sources. His edicts on 33 rock faces across the subcontinent are still readable today."},
+
+  "Shravana_1":{"name":"The All-Hearing","realm":"SILENCE & POWER","sym":"eye","ctx":"Every great court had one figure whose predictions were treated as policy — not because they were supernatural, but because they listened to every conversation, read every letter, and spoke only when certain."},
+  "Shravana_2":{"name":"Shadow Intelligence","realm":"SILENCE & DOMINION","sym":"eye","ctx":"The man who heard everything reported only to the emperor. He did not act on intelligence — he simply knew everything, and that knowledge was its own form of total power."},
+  "Shravana_3":{"name":"King Outlaster","realm":"WISDOM & STONE","sym":"scroll","ctx":"Some advisers accumulated decades of institutional knowledge until replacing them became impossible. These men outlasted every emperor they served, shaped every one, and appear in the records only as footnotes."},
+  "Shravana_4":{"name":"Walking Prophet","realm":"DUST & LIGHT","sym":"scroll","ctx":"Adi Shankaracharya walked the entire Indian subcontinent, debated every major philosopher and religious authority, and rewrote India's theological map — all before 32, alone, with no army and no title."},
+
+  "Dhanishtha_1":{"name":"Deccan Warlord","realm":"IRON & GOLD","sym":"sword","ctx":"The Deccan plateau was contested for 1,000 years by six successive empires. The warlord who held it controlled the geographic heart of India and the grain wealth of two river systems simultaneously."},
+  "Dhanishtha_2":{"name":"River Conqueror","realm":"GOLD & WATER","sym":"spear","ctx":"The great river valleys — Ganga, Godavari, Krishna — were the most fertile and most fought-over land in the ancient world. Their conquerors became the wealthiest sovereigns in history, by a significant margin."},
+  "Dhanishtha_3":{"name":"War Treasurer","realm":"GOLD & IRON","sym":"crown","ctx":"War is funded before it is fought. The War Treasury keeper decided which campaigns were possible and which were fantasy. He often held more real power than the general — and received none of the glory."},
+  "Dhanishtha_4":{"name":"Tribute Lord","realm":"IRON & LEDGER","sym":"scroll","ctx":"Imperial tribute systems — Maurya to Mughal — required one man with both military authority and administrative precision. He set the number that determined what the empire could afford. Everything else followed."},
+
+  "Shatabhisha_1":{"name":"Imperial Physician","realm":"MEDICINE & GOLD","sym":"serpent","ctx":"Charaka and Sushruta trained court physicians who performed cataract surgery and rhinoplasty before the first century CE. The Grand Physician attended emperors daily and held their lives in his knowledge alone."},
+  "Shatabhisha_2":{"name":"Unwritten Law","realm":"VOID & ORDER","sym":"eye","ctx":"Beyond the written Dharmashastras existed a body of legal precedent known only to certain scholars — cases and rulings never committed to text. These men were summoned to settle disputes no written law could resolve."},
+  "Shatabhisha_3":{"name":"Sky Reader","realm":"VOID & COSMOS","sym":"eye","ctx":"Aryabhata calculated the Earth's circumference within 1% of its actual value in 499 CE. The astronomers who built on his work predicted eclipses more accurately than any civilisation before 1600 CE."},
+  "Shatabhisha_4":{"name":"Battle Healer","realm":"BLOOD & MEDICINE","sym":"serpent","ctx":"Sushruta's school trained surgeons who travelled with Maurya armies. The medical corps that saved enough wounded soldiers to continue the Kalinga campaign was the difference between conquest and retreat."},
+
+  "Purva Bhadrapada_1":{"name":"War Priest","realm":"FLAME & IRON","sym":"flame","ctx":"Before every major battle in ancient India, war rituals were performed by specific priests whose blessing was considered decisive. Generals — including Shivaji — waited for the priest's word before the advance was sounded."},
+  "Purva Bhadrapada_2":{"name":"Throne Burner","realm":"FIRE & REBIRTH","sym":"flame","ctx":"Ashoka after Kalinga. Akbar's Din-i-Ilahi. Shivaji's Maratha law code. Some kings deliberately dismantled the existing order — including their own power — to build something they believed would outlast them."},
+  "Purva Bhadrapada_3":{"name":"Eternal Flame","realm":"FLAME & FOREVER","sym":"flame","ctx":"Certain Vedic fires are documented as burning uninterrupted for over 2,000 years. The families who maintained them held a continuity of sacred trust that no dynasty, invasion, or forced conversion could extinguish."},
+  "Purva Bhadrapada_4":{"name":"Ideological General","realm":"ASH & IRON","sym":"sword","ctx":"Some commanders fought not for territory or gold but for a principle — religious, dynastic, or personal. They were the most dangerous generals of any age: they could not be bought, bribed, or reasoned off the field."},
+
+  "Uttara Bhadrapada_1":{"name":"Ancient Lawgiver","realm":"STONE & AEONS","sym":"scroll","ctx":"The Arthashastra, Manusmriti, and Dharmashastra shaped how India governed itself for 2,000 years. Their authors are known. Their full influence is not. It is still being felt today in courts across the subcontinent."},
+  "Uttara Bhadrapada_2":{"name":"Forbidden Recorder","realm":"INK & SHADOW","sym":"serpent","ctx":"Court historians — the Rajapuraniks — were sworn to record everything, including what emperors wished erased. Some of their records survived 800 years before being deliberately destroyed. What remains is still being deciphered."},
+  "Uttara Bhadrapada_3":{"name":"Forest Elder","realm":"DEEP & ROOTS","sym":"lotus","ctx":"India's forest hermitages — the Aranyakas — were centres of political philosophy beyond imperial reach. The elder who presided over one shaped the thinking of entire dynasties from the wilderness, without ever entering a court."},
+  "Uttara Bhadrapada_4":{"name":"Conquered Land's Governor","realm":"STONE & IRON","sym":"crown","ctx":"The Satrap appointed to govern a newly conquered province was simultaneously conqueror, administrator, and diplomat. The wrong appointment lost the territory within a generation. The right one built something that lasted centuries."},
+
+  "Revati_1":{"name":"Last Light","realm":"GOLD & ENDING","sym":"crown","ctx":"Every great age ends with one sovereign who carries its light alone into the dark. The last great Chola. The last Gupta at full power. These men did not fail their civilisations. Their civilisations simply moved on without them."},
+  "Revati_2":{"name":"Memory Keeper","realm":"INK & ETERNITY","sym":"scroll","ctx":"The scribes who preserved the Vedas and the Arthashastra through invasions and five centuries of collapse did so from memory alone — and the texts they recovered are the foundation of everything written in India after."},
+  "Revati_3":{"name":"Ancient Route Master","realm":"SILK & COMPLETION","sym":"scroll","ctx":"The trade routes connecting India to Rome and China were 2,000 years old before any European noticed them. Their masters accumulated quietly — and grew richer than emperors without ever needing to conquer a single city."},
+  "Revati_4":{"name":"Renounced King","realm":"DUST & GOLD","sym":"lotus","ctx":"Chandragupta Maurya gave up the largest empire in Indian history to walk south as a Jain monk. Some rulers chose the road at the height of their power. These men were considered holier than any priest — and freer than any king."}
+};
+
+
+/* ============================================================
+   PLANET ROLES — feats / comparisons / powers / context
+   (one set per ruling planet, used as base layer)
+============================================================ */
+var PLANET_ROLES = {
+  Mars:{
+    faction:'Iron Brotherhood',
+    eras:['Maurya Empire · 300 BCE','Gupta Dynasty · 380 CE','Rajput Kingdom · 900 CE','Maratha Confederacy · 1680 CE'],
+    comparisons:[
+      {icon:'⚔️',name:'Rajputana Clans',desc:'The greatest warrior clans of India. You outranked their finest generals.',rank:'TOP <1%',you:'BEATS 99%+'},
+      {icon:'🏹',name:'Maurya Standing Army',desc:'600,000 soldiers — the mightiest force of the ancient world. You led its vanguard.',rank:'TOP 1%',you:'BEATS 99%'},
+      {icon:'🛡️',name:'Maratha Cavalry',desc:"Shivaji's horsemen redefined warfare. You were their blueprint.",rank:'TOP <1%',you:'BEATS 99%+'}
+    ],
+    feats:['Commanded 40,000 cavalry at the decisive battle — your word alone set them in motion','Went 23 years without a single defeat in open field battle','Turned 3 campaigns from certain loss to complete victory by rewriting the battle plan overnight'],
+    powers:['No soldier under your command has ever broken rank in retreat','Sensed betrayal before the traitor had finished the thought','Supply lines held at twice the normal range under your authority'],
+    context:'Fewer than 400 men in any single empire held senior military command at one time. Across all of Indian history, Mars-ruled Nakshatras produce the highest concentration of documented battlefield commanders.'
+  },
+  Venus:{
+    faction:'Courts of the Silk Throne',
+    eras:['Vijayanagara Empire · 1400 CE','Mughal Court · 1580 CE','Chola Dynasty · 1000 CE','Satavahana Kingdom · 200 CE'],
+    comparisons:[
+      {icon:'🌹',name:'Mughal Inner Court',desc:'The most politically sophisticated court in Asian history. You outmaneuvered every faction.',rank:'TOP <1%',you:'BEATS 99%+'},
+      {icon:'👑',name:'Vijayanagara Nobles',desc:'500 nobles competed for influence. You were the one kings feared to dismiss.',rank:'TOP 1%',you:'BEATS 99%'},
+      {icon:'🕊️',name:'Silk Road Diplomatists',desc:'The men who negotiated between Rome, Persia, and India simultaneously.',rank:'TOP <1%',you:'BEATS 99%+'}
+    ],
+    feats:['Ended 3 wars through a single diplomatic audience — no battle required','Your name appears in the records of 4 different kingdoms simultaneously','Negotiated a treaty that held for 60 years after your death'],
+    powers:['Read the political intentions of any room within minutes of entering it','Your seal on a letter carried the weight of a royal decree','Entire courts recalibrated their alliances based on your presence or absence'],
+    context:'Venus-ruled Nakshatras in Vedic Jyotish are associated with refinement, persuasion, and the power of attraction. In historical terms, this translates to the diplomats, consorts, and courtiers who moved empires without armies.'
+  },
+  Jupiter:{
+    faction:'Order of the Sacred Fire',
+    eras:['Vedic Civilization · 1500 BCE','Nalanda University · 500 CE','Gupta Golden Age · 400 CE','Buddhist Monasteries · 300 BCE'],
+    comparisons:[
+      {icon:'📜',name:'Nalanda University',desc:'10,000 scholars, the greatest institution of the ancient world. You shaped its highest doctrine.',rank:'TOP <1%',you:'BEATS 99%+'},
+      {icon:'🔥',name:'Vedic Ashram Tradition',desc:'3,000 years of oral knowledge transmission. You held the highest seat.',rank:'TOP 1%',you:'BEATS 99%'},
+      {icon:'🕉️',name:'Buddhist Sangha Council',desc:'The institution that carried Buddhist law across Asia. You presided over it.',rank:'TOP <1%',you:'BEATS 99%+'}
+    ],
+    feats:['Wrote foundational texts still cited 2,000 years after your death','Advised three successive emperors — and outlasted all three','Your interpretation of sacred law ended a war that armies could not'],
+    powers:['Foretold the outcomes of political events with a precision that unsettled kings','Trained 1,000 students across a 40-year teaching career, several of whom led empires','Your blessing or curse was treated as binding by courts across the subcontinent'],
+    context:'Jupiter-ruled Nakshatras mark the scholars, priests, and advisers who held the intellectual and spiritual authority of empires. Fewer than 500 scholars in Indian history achieved the level of documented influence your role represents.'
+  },
+  Saturn:{
+    faction:'Shadow Council of the Realm',
+    eras:['Nanda Empire · 340 BCE','Chanakya Era · 320 BCE','Mughal Administration · 1600 CE','Ottoman Parallel · 1500 CE'],
+    comparisons:[
+      {icon:'🕵️',name:'Maurya Intelligence Network',desc:'Chanakya built the most sophisticated spy network of the ancient world. You ran it.',rank:'TOP <1%',you:'BEATS 99%+'},
+      {icon:'🏛️',name:'Imperial Tax Administration',desc:'The Maurya empire taxed 50 million people. The man at the top of that system had more real power than most generals.',rank:'TOP 1%',you:'BEATS 99%'},
+      {icon:'⚖️',name:'Imperial Law Council',desc:'The council that interpreted imperial law across 5 million square kilometres.',rank:'TOP <1%',you:'BEATS 99%+'}
+    ],
+    feats:['Designed a provincial administration system still in use 400 years after your death','Identified 3 potential successors to the throne before the emperor had chosen one','Your contingency plans for every scenario meant the empire never faced a crisis without a response'],
+    powers:['Predicted political crises with 10-year accuracy, based on pattern recognition alone','No decision of state was made without your prior assessment','Kingdoms aligned or fell based on your advice, given quietly in private'],
+    context:'Saturn-ruled Nakshatras in Vedic Jyotish produce the administrators, strategists, and long-term planners who hold empires together invisibly. Chanakya himself — the greatest strategist in Indian history — was born under Saturn\'s domain.'
+  },
+  Mercury:{
+    faction:'Brotherhood of Hidden Arts',
+    eras:['Taxila Academy · 600 BCE','Islamic Golden Age · 900 CE','Chola Scientific Era · 1000 CE','Gupta Mathematical Age · 400 CE'],
+    comparisons:[
+      {icon:'⚗️',name:'Nalanda Science Faculty',desc:'Where Indian mathematics, astronomy, and medicine reached their ancient peak. You were its lead mind.',rank:'TOP <1%',you:'BEATS 99%+'},
+      {icon:'📐',name:'Taxila Engineering School',desc:'Chanakya and Panini both studied here. You were the one who taught the teachers.',rank:'TOP 1%',you:'BEATS 99%'},
+      {icon:'🗺️',name:'Imperial Survey Corps',desc:'The surveyors who mapped the Maurya empire — 5 million square kilometres — without modern instruments.',rank:'TOP <1%',you:'BEATS 99%+'}
+    ],
+    feats:['Developed a mathematical method 500 years ahead of its equivalent in Europe','Designed a water management system that irrigated 2 million acres — still partially functional today','Your cipher system was so secure it was not broken until 300 years after your death'],
+    powers:['Solved in an afternoon what rival scholars had failed to solve in decades','Read intent in written text that others read only as words','Built systems — aqueducts, roads, codes — that outlasted every empire that commissioned them'],
+    context:'Aryabhata calculated the Earth\'s circumference in 499 CE. Brahmagupta invented the concept of zero in 628 CE. Sushruta performed surgical procedures in 600 BCE. Mercury-ruled Nakshatras mark the intellectual lineage that produced these minds.'
+  },
+  Moon:{
+    faction:'The Lunar Court',
+    eras:['Satavahana Dynasty · 100 CE','Pallava Kingdom · 700 CE','Chalukya Empire · 600 CE','Vijayanagara · 1350 CE'],
+    comparisons:[
+      {icon:'🌊',name:'Chola Naval Admiralty',desc:'The greatest maritime force of the ancient East. You commanded its senior council.',rank:'TOP <1%',you:'BEATS 99%+'},
+      {icon:'🌙',name:'Pallava Royal Court',desc:'Where temple architecture, classical dance, and imperial governance merged. You presided over all three.',rank:'TOP 1%',you:'BEATS 99%'},
+      {icon:'🌸',name:'Vijayanagara Inner Circle',desc:'The inner circle of the greatest Hindu empire of the medieval period.',rank:'TOP <1%',you:'BEATS 99%+'}
+    ],
+    feats:['Led a naval force of 200 ships through a monsoon storm — not one ship lost','Your political intuitions, recorded by your scribes, proved correct in 38 of 40 documented cases','Held a dynasty stable for 40 years through succession crises, invasions, and internal coups'],
+    powers:['Intuited political developments weeks before they became visible to any analyst','Your presence in a room changed its emotional character completely','Entire armies reported unusual steadiness and calm under your direct command'],
+    context:'Moon-ruled Nakshatras in Vedic Jyotish — Rohini, Hasta, Shravana — mark those whose power operates through intuition, emotional intelligence, and the ability to hold large groups of people in alignment. Fewer than 300 rulers in Asian history combined spiritual and temporal authority at this level.'
+  },
+  Sun:{
+    faction:'Dynasty of the Golden Throne',
+    eras:["Ashoka's Empire · 268 BCE",'Gupta Empire · 320 CE','Chola Dynasty · 1000 CE','Vijayanagara · 1336 CE'],
+    comparisons:[
+      {icon:'👑',name:'Gupta Empire',desc:"The golden age of Indian civilisation in art, science, and governance. You were its defining reign.",rank:'TOP <1%',you:'BEATS 99%+'},
+      {icon:'🦁',name:"Ashoka's Legacy",desc:'The emperor who chose edicts over conquest after Kalinga. Your moral authority equalled his military one.',rank:'TOP 1%',you:'BEATS 99%'},
+      {icon:'🌞',name:'Chola Imperial Court',desc:'1,000 years of unbroken rule. You were its highest point.',rank:'TOP <1%',you:'BEATS 99%+'}
+    ],
+    feats:['United 12 warring kingdoms without a final battle — through a combination of force, marriage, and treaty','Your coronation is still referenced in oral traditions 1,000 years later','Commanded 11 campaigns personally and won every one'],
+    powers:['Your personal presence stopped open rebellions on two documented occasions','Loyalty to you passed to your successors — an almost unprecedented political phenomenon','No general who served under your banner ever defected to an enemy'],
+    context:'In 3,000 years of recorded South Asian history, fewer than 80 rulers held uncontested imperial sovereignty — the kind where no king above them existed. The Sun as your Nakshatra ruler marks the solar lineage in Vedic Jyotish — the Suryavansha — from which most great emperors claimed descent.'
+  },
+  Ketu:{
+    faction:'The Unseen Order',
+    eras:['Maurya Secret Corps · 280 BCE','Vijayanagara Shadow Court · 1400 CE','Rajput Intelligence · 900 CE','Maratha Spymasters · 1670 CE'],
+    comparisons:[
+      {icon:'🥷',name:'Maurya Guptachara Corps',desc:'Chanakya\'s documented secret police — the most sophisticated covert apparatus of the ancient world.',rank:'TOP <1%',you:'BEATS 99%+'},
+      {icon:'🗡️',name:'Maratha Intelligence Network',desc:"Shivaji's intelligence network penetrated the Mughal court completely. You built the methodology.",rank:'TOP 1%',you:'BEATS 99%'},
+      {icon:'🌑',name:'Rajput Night Operations',desc:'Specialised units trained in nocturnal movement and silent entry. Your legend is their founding doctrine.',rank:'TOP <1%',you:'BEATS 99%+'}
+    ],
+    feats:['Removed a corrupt official from power without a single witness — the case was never investigated','Trained 500 operatives across 12 provinces, none of whom knew each other existed','Saved a dynasty by eliminating a succession conspiracy before it was even announced'],
+    powers:['Moved through any security arrangement without leaving evidence','Your operatives never knew who gave the final order — the chain ended at you','In 40 years of documented operations, your identity was never established by any enemy court'],
+    context:'Ketu\'s domain in Vedic Jyotish is moksha — liberation from visibility, from ego, from trace. In historical terms, this maps to the operatives, spymasters, and shadow figures whose real influence appears only in what did not happen — the coups that never occurred, the wars that never started.'
+  },
+  Rahu:{
+    faction:'Lords of the Borrowed Crown',
+    eras:['Indo-Greek Kingdoms · 150 BCE','Mughal Factional Courts · 1650 CE','Silk Road Free Cities · 700 CE','Deccan Sultanates · 1500 CE'],
+    comparisons:[
+      {icon:'🎭',name:'Mughal Factional Court',desc:'The most complex political theatre in medieval Asia. You authored its most consequential act.',rank:'TOP <1%',you:'BEATS 99%+'},
+      {icon:'🌐',name:'Silk Road Power Brokers',desc:'The men who financed both sides of every war on the trade routes between Rome and China.',rank:'TOP 1%',you:'BEATS 99%'},
+      {icon:'🏴‍☠️',name:'Independent Maritime States',desc:'The free port-states that defied the Mughal, Maratha, and Portuguese empires simultaneously.',rank:'TOP <1%',you:'BEATS 99%+'}
+    ],
+    feats:['Operated under documented identities in 4 different kingdoms simultaneously — none connected to the same man','Negotiated the transfer of a province without either party realising you represented the other side','Your real name appears in no historical record — only your aliases do'],
+    powers:['Assumed any identity completely — accent, manner, bearing, all adapted within hours','Identified the decisive leverage point in any political situation before others had mapped the situation','Built institutional power twice over from nothing — and walked away from both before they peaked'],
+    context:'Rahu\'s domain in Vedic Jyotish is illusion, ambition, and the foreign — the force that disrupts established order from outside it. Historically, Rahu-ruled Nakshatras mark the innovators, infiltrators, and boundary-crossers who changed the course of empires by refusing to be classified.'
+  }
+};
+
+var WAR_ROLE_BANK = {
+  Mars:['Frontline Senapati','Siege Breaker','Cavalry Warlord','Iron Vanguard','Battlefield Commander','Fortress Conqueror','War Elephant Marshal','Monsoon General'],
+  Venus:['Treaty War Strategist','Royal Alliance Commander','Silk Court Spymaster','Peace Siege Envoy','War Consort Regent','Diplomatic Battle Lord','Court Sabotage Master','Hostage-Treaty Commander'],
+  Jupiter:['War Priest','Battlefield Oracle','Sacred Fire Commander','Temple War Adviser','Dharma Senapati','Royal Oath Keeper','Ritual Battle Master','Prophet of Campaigns'],
+  Saturn:['Fortress Warden','Imperial War Administrator','Siege Logistics Master','Shadow War Planner','Prison-Fort Commander','War Tax Governor','Campaign Quartermaster','Defence Council Chief'],
+  Mercury:['Siege Engineer','Cipher War Master','Battle Cartographer','War Machine Designer','Signal Corps Chief','Tactical Mathematician','Fort Blueprint Keeper','Campaign Codebreaker'],
+  Moon:['Naval War Regent','Monsoon Fleet Commander','Lunar Battle Captain','River Fort Admiral','Dynasty Shield Bearer','War Council Matriarch','Tide Commander','Calm-before-Battle Strategist'],
+  Sun:['Solar Emperor','Chakravartin Commander','Golden Throne Warlord','Imperial Battle King','Conquest Sovereign','Lion Standard Emperor','Crown Senapati','War-Crowned Ruler'],
+  Ketu:['Night Raid Captain','Assassin-General','Shadow Vanguard','Covert War Master','Silent Blade Commander','Ambush Strategist','Secret Corps Chief','Fort Infiltration Lord'],
+  Rahu:['Foreign Legion Warlord','Border Raider King','False-Flag Commander','Mercenary Crown Lord','Pirate-Port Admiral','Rebel War Broker','Masked Battlefield Prince','Borrowed-Crown General']
+};
+function warifyRole(role,chart){
+  var planet=(chart&&chart.planet)||'Mars';
+  var bank=WAR_ROLE_BANK[planet]||WAR_ROLE_BANK.Mars;
+  var idx=hashText(((chart&&chart.roleKey)||'')+' '+((role&&role.name)||''))%bank.length;
+  var next={};
+  for(var k in role)next[k]=role[k];
+  next.name=bank[idx];
+  next.realm=/sea|naval|fleet|tide|river/i.test(next.name)?'SEA & WAR':/shadow|secret|ambush|assassin|covert|spy|cipher/i.test(next.name)?'SHADOW & STEEL':/priest|oracle|sacred|dharma|ritual/i.test(next.name)?'FIRE & IRON':/emperor|throne|crown|sovereign|king/i.test(next.name)?'CROWN & CONQUEST':'IRON & BATTLE';
+  next.ctx='This archetype belongs to the war machinery behind ancient empires: commanders, siege minds, covert captains, naval chiefs, battle priests, and campaign strategists who decided whether kingdoms survived.';
+  return next;
+}
+
+/* ============================================================
+   NAKSHATRA DATA
+============================================================ */
+var NAKS = [
+  {name:'Ashwini',ruler:'Ketu'},{name:'Bharani',ruler:'Venus'},{name:'Krittika',ruler:'Sun'},
+  {name:'Rohini',ruler:'Moon'},{name:'Mrigashira',ruler:'Mars'},{name:'Ardra',ruler:'Rahu'},
+  {name:'Punarvasu',ruler:'Jupiter'},{name:'Pushya',ruler:'Saturn'},{name:'Ashlesha',ruler:'Mercury'},
+  {name:'Magha',ruler:'Ketu'},{name:'Purva Phalguni',ruler:'Venus'},{name:'Uttara Phalguni',ruler:'Sun'},
+  {name:'Hasta',ruler:'Moon'},{name:'Chitra',ruler:'Mars'},{name:'Swati',ruler:'Rahu'},
+  {name:'Vishakha',ruler:'Jupiter'},{name:'Anuradha',ruler:'Saturn'},{name:'Jyeshtha',ruler:'Mercury'},
+  {name:'Mula',ruler:'Ketu'},{name:'Purva Ashadha',ruler:'Venus'},{name:'Uttara Ashadha',ruler:'Sun'},
+  {name:'Shravana',ruler:'Moon'},{name:'Dhanishtha',ruler:'Mars'},{name:'Shatabhisha',ruler:'Rahu'},
+  {name:'Purva Bhadrapada',ruler:'Jupiter'},{name:'Uttara Bhadrapada',ruler:'Saturn'},{name:'Revati',ruler:'Mercury'}
+];
+var RASHI=['Aries','Taurus','Gemini','Cancer','Leo','Virgo','Libra','Scorpio','Sagittarius','Capricorn','Aquarius','Pisces'];
+var RASHI_L=['Mars','Venus','Mercury','Moon','Sun','Mercury','Venus','Mars','Jupiter','Saturn','Saturn','Jupiter'];
+var CITIES={
+  'delhi':[28.6,77.2],'new delhi':[28.6,77.2],'mumbai':[19.0,72.8],'bombay':[19.0,72.8],
+  'bangalore':[12.9,77.6],'bengaluru':[12.9,77.6],'chennai':[13.1,80.3],'madras':[13.1,80.3],
+  'kolkata':[22.6,88.4],'calcutta':[22.6,88.4],'hyderabad':[17.4,78.5],'pune':[18.5,73.9],
+  'ahmedabad':[23.0,72.6],'jaipur':[26.9,75.8],'lucknow':[26.8,80.9],'varanasi':[25.3,83.0],
+  'patna':[25.6,85.1],'bhopal':[23.3,77.4],'indore':[22.7,75.8],'nagpur':[21.1,79.1],
+  'surat':[21.2,72.8],'kochi':[9.9,76.3],'chandigarh':[30.7,76.8],'guwahati':[26.2,91.7],
+  'amritsar':[31.6,74.9],'agra':[27.2,78.0],'coimbatore':[11.0,77.0],'visakhapatnam':[17.7,83.3],
+  'london':[51.5,-0.1],'new york':[40.7,-74.0],'dubai':[25.2,55.3],'singapore':[1.3,103.8],
+  'toronto':[43.7,-79.4],'sydney':[-33.9,151.2],'berlin':[52.5,13.4],'paris':[48.9,2.3],
+  'los angeles':[34.0,-118.2],'chicago':[41.9,-87.6],'boston':[42.4,-71.1],'seattle':[47.6,-122.3]
+};
+var TIERS=[
+  {min:97,label:'TOP 0.01%',tier:'DIVINE',        badge:'The gods remembered your name',          above:'Fewer than 10 souls per empire',       below:'Every soul who ever drew breath',      pBar:99.5},
+  {min:92,label:'TOP 0.05%',tier:'IMMORTAL',      badge:'Your name survived the age itself',      above:'~50 across all recorded empires',       below:'999 in every 1,000 humans ever born',  pBar:98.5},
+  {min:86,label:'TOP 0.1%', tier:'LEGENDARY',     badge:'Armies wept when you fell',              above:'~100 across all recorded empires',      below:'999 in every 1,000 humans ever born',  pBar:97.5},
+  {min:78,label:'TOP 0.5%', tier:'MYTHIC',        badge:'Your name survived the dynasty',         above:'~500 across the ancient world',         below:'199 in every 200 humans ever born',    pBar:96},
+  {min:68,label:'TOP 1%',   tier:'EPIC',          badge:'One ruler per century knew your face',   above:'~2,000 across all known history',       below:'99 in every 100 humans ever born',     pBar:92},
+  {min:58,label:'TOP 2%',   tier:'HEROIC',        badge:'The court recorded your deeds',          above:'~6,000 across recorded civilisation',   below:'49 in every 50 humans ever born',      pBar:89},
+  {min:46,label:'TOP 3%',   tier:'NOBLE',         badge:'The chronicles noted your passage',      above:'~10,000 across recorded civilisation',  below:'97 in every 100 humans ever born',     pBar:85},
+  {min:34,label:'TOP 5%',   tier:'RARE',          badge:'You were known beyond your province',    above:'~30,000 across the ancient world',      below:'19 in every 20 humans ever born',      pBar:80},
+  {min:24,label:'TOP 10%',  tier:'UNCOMMON',      badge:'Your name filled one line in the annals',above:'~1 lakh across recorded history',       below:'9 in every 10 humans ever born',       pBar:72},
+  {min:14,label:'TOP 20%',  tier:'COMMON',        badge:'You served with honour',                 above:'~3 lakh across the ancient world',      below:'4 in every 5 humans ever born',        pBar:62},
+  {min:6, label:'TOP 30%',  tier:'MORTAL',        badge:'You lived inside the age, not above it', above:'~7 lakh across recorded history',       below:'7 in every 10 humans ever born',       pBar:54},
+  {min:0, label:'TOP 40%',  tier:'HUMBLE',        badge:'You held the line when others ran',      above:'~10 lakh across recorded history',      below:'3 in every 5 humans ever born',        pBar:48}
+];
+
+/* ============================================================
+   ASTRO CALCULATIONS
+============================================================ */
+function calcJD(date,time){
+  var p=date.split('-').map(Number),y=p[0],m=p[1],d=p[2];
+  var t=(time||'06:00').split(':').map(Number),ut=t[0]+t[1]/60;
+  var A=Math.floor((14-m)/12),YY=y+4800-A,MM=m+12*A-3;
+  var JDN=d+Math.floor((153*MM+2)/5)+365*YY+Math.floor(YY/4)-Math.floor(YY/100)+Math.floor(YY/400)-32045;
+  return JDN+(ut-12)/24;
+}
+function calcSunLon(j){var n=j-2451545,L=(280.46+0.9856474*n)%360,g=((357.528+0.9856003*n)%360)*Math.PI/180;return((L+1.915*Math.sin(g)+0.02*Math.sin(2*g))%360+360)%360;}
+function calcMoonLon(j){var n=j-2451545,L=(218.316+13.176396*n)%360,M=(134.963+13.064993*n)%360,F=(93.272+13.22935*n)%360;return((L+6.289*Math.sin(M*Math.PI/180)-1.274*Math.sin((2*F-M)*Math.PI/180))%360+360)%360;}
+function calcAy(j){return 23.85+1.397*(j-2451545)/36525;}
+function sid(lon,ay){return((lon-ay)%360+360)%360;}
+function getCity(c){var k=c.toLowerCase().trim();for(var n in CITIES){if(k.indexOf(n)!==-1||n.indexOf(k)!==-1)return CITIES[n];}return[22.0,78.0];}
+function computeChart(date,time,city){
+  var j=calcJD(date,time),ay=calcAy(j);
+  var sunS=sid(calcSunLon(j),ay),moonS=sid(calcMoonLon(j),ay);
+  var nakIdx=Math.floor(moonS/(360/27)),nak=NAKS[nakIdx];
+  var pada=Math.floor((moonS%(360/27))/(360/108))+1;
+  var sunRashi=RASHI[Math.floor(sunS/30)];
+  var coords=getCity(city),lat=coords[0],lon=coords[1];
+  var RAMC=((280.46061837+360.98564736629*(j-2451545)+lon)%360+360)%360;
+  var eps=23.439*Math.PI/180,latR=lat*Math.PI/180,LST=RAMC*Math.PI/180;
+  var ascR=Math.atan2(Math.cos(LST),-(Math.sin(LST)*Math.cos(eps)+Math.tan(latR)*Math.sin(eps)));
+  var lagnaS=sid(((ascR*180/Math.PI)+360)%360,ay);
+  var lagnaRashi=RASHI[Math.floor(lagnaS/30)];
+  var moonDeg=moonS%30;
+  // Multi-factor score: moon degree + lagna degree + sun degree + pada + birth day offset
+  // Designed to spread evenly across 0-99 for true variety
+  var sunDeg=sunS%30;
+  var lagDeg=lagnaS%30;
+  var rawScore=(moonDeg*3.1 + lagDeg*2.3 + sunDeg*1.7 + pada*8.5 + (moonS/360)*41 + (lagnaS/360)*29);
+  var score=Math.floor(rawScore)%100;
+  var roleKey=nak.name+'_'+pada;
+  return{nak:nak,pada:pada,sunRashi:sunRashi,lagnaRashi:lagnaRashi,score:score,planet:nak.ruler,roleKey:roleKey};
+}
+
+function hashText(text){
+  var h=0,s=String(text||'');
+  for(var i=0;i<s.length;i++)h=((h<<5)-h+s.charCodeAt(i))|0;
+  return Math.abs(h);
+}
+function pickRoleSymbol(role,chart){
+  var name=(role&&role.name?role.name:'').toLowerCase();
+  var realm=(role&&role.realm?role.realm:'').toLowerCase();
+  var key=((chart&&chart.roleKey)||'')+' '+name+' '+realm;
+  if(/sun|solar|chakravartin/.test(key))return 'sun';
+  if(/moon|lunar/.test(key))return 'moon';
+  if(/serpent|venom|physician|healer|medicine|poison/.test(key))return 'serpent';
+  if(/spy|shadow|cipher|unnamed|inquisitor|eye|void|secret/.test(key))return 'eye';
+  if(/priest|fire|flame|pyre|ash|sacred/.test(key))return 'flame';
+  if(/emperor|king|crown|throne|sovereign|regent|satrap|gold vault/.test(key))return 'crown';
+  if(/law|scribe|scroll|chronicler|architect|builder|geometer|cartographer|scholar|record|route|merchant|guild|vizier|counsel/.test(key))return 'scroll';
+  if(/lotus|renounced|elder|peace|diplomat|patron|sacred/.test(key))return 'lotus';
+  if(/warden|shield|wall|fort|admiral|naval|guard|rearguard|stand/.test(key))return 'shield';
+  if(/spear|commander|general|warlord|vanguard|conqueror|cavalry|hunt|road sovereign/.test(key))return 'spear';
+  if(/time|eternal|aeon/.test(key))return 'hourglass';
+  var palette=['sword','shield','crown','scroll','flame','moon','sun','serpent','hourglass','lotus','spear','eye'];
+  return palette[hashText(key)%palette.length];
+}
+
+/* ============================================================
+   LOADING
+============================================================ */
+var PHRASES=['Reading your birth chart…','Calculating planetary positions…','Consulting the Navagrahas…','Aligning your Lagna…','Tracing your Nakshatra…','The oracle awakens…'];
+var pIdx=0,pInt=null;
+function startPhrases(){pIdx=0;document.getElementById('loadPhrase').textContent=PHRASES[0];pInt=setInterval(function(){pIdx=(pIdx+1)%PHRASES.length;document.getElementById('loadPhrase').textContent=PHRASES[pIdx];},1400);}
+function stopPhrases(){if(pInt)clearInterval(pInt);}
+
+/* ============================================================
+   STARS
+============================================================ */
+function makeStars(){
+  var w=document.getElementById('starsWrap');w.innerHTML='';
+  for(var i=0;i<150;i++){
+    var s=document.createElement('div');s.className='star-dot';
+    var sz=Math.random()*2.2+0.4,base=0.08+Math.random()*0.28;
+    s.style.cssText='width:'+sz+'px;height:'+sz+'px;left:'+(Math.random()*100)+'%;top:'+(Math.random()*70)+'%;--base:'+base+';animation-duration:'+(3+Math.random()*5)+'s;animation-delay:'+(Math.random()*6)+'s;opacity:'+base+';';
+    w.appendChild(s);
+  }
+}
+
+/* ============================================================
+   CALCULATE
+============================================================ */
+function calculate(){
+  var date=document.getElementById('birthdate').value;
+  var time=document.getElementById('birthtime').value;
+  var city=document.getElementById('birthcity').value.trim();
+  if(!date||!city){document.getElementById('errorMsg').style.display='block';return;}
+  document.getElementById('errorMsg').style.display='none';
+  document.getElementById('calcBtn').disabled=true;
+  document.getElementById('loading').classList.add('visible');
+  startPhrases();
+  setTimeout(function(){
+    var chart=computeChart(date,time,city);
+    var r108=warifyRole(ROLES_108[chart.roleKey]||ROLES_108['Ashwini_1'],chart);
+    var base=PLANET_ROLES[chart.planet]||PLANET_ROLES['Jupiter'];
+    var tier=TIERS[TIERS.length-1];
+    for(var i=0;i<TIERS.length;i++){if(chart.score>=TIERS[i].min){tier=TIERS[i];break;}}
+    var birthYear=parseInt(date.split('-')[0]);
+    var era=base.eras[birthYear%base.eras.length];
+    callClaude(chart,r108,base,tier,era);
+  },400);
+}
+
+/* ============================================================
+   CLAUDE API
+============================================================ */
+function callClaude(chart,r108,base,tier,era){
+  var prompt='You are a Vedic astrology oracle and historian. Write a past-life destiny card.\n\nBirth chart:\n- Moon Nakshatra: '+chart.nak.name+' (Ruler: '+chart.planet+')\n- Sun Rashi: '+chart.sunRashi+'\n- Lagna: '+chart.lagnaRashi+'\n- Nakshatra Pada: '+chart.pada+'\n- Assigned Historical Role: '+r108.name+'\n- Era: '+era+'\n- Power Rank: '+tier.label+' ('+tier.tier+')\n\nWrite this card with the weight of carved stone — dark, specific, real.\n\n1. Open with what '+chart.nak.name+' Nakshatra actually means in Vedic Jyotish and why it produced this exact role\n2. Write 2 sentences of past-life story — vivid, personal, historically grounded, not generic\n3. Each feat must name a real place, army, dynasty, or number — no vague glory\n4. The rank description must feel earned, not flattering\n\nRespond ONLY in valid JSON, no markdown fences:\n{"story":"2 sentences","feat1":"specific feat","feat2":"specific feat","feat3":"specific feat","powerFact":"one historical stat about rarity of this role","rankDesc":"one grounded sentence about their rank"}';
+
+  fetch('https://api.anthropic.com/v1/messages',{
+    method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,messages:[{role:'user',content:prompt}]})
+  })
+  .then(function(r){return r.json();})
+  .then(function(d){
+    var txt=d.content.map(function(i){return i.text||'';}).join('').replace(/```json|```/g,'').trim();
+    var p=JSON.parse(txt);
+    stopPhrases();
+    document.getElementById('loading').classList.remove('visible');
+    renderResult(chart,r108,base,tier,era,p.story,[p.feat1,p.feat2,p.feat3],p.powerFact,p.rankDesc);
+  })
+  .catch(function(){
+    stopPhrases();
+    document.getElementById('loading').classList.remove('visible');
+    renderResult(chart,r108,base,tier,era,null,null,null,null);
+  });
+}
+
+/* ============================================================
+   RENDER
+============================================================ */
+function renderResult(chart,r108,base,tier,era,story,feats,powerFact,rankDesc){
+  document.getElementById('page-input').style.display='none';
+  document.getElementById('page-result').classList.add('visible');
+  makeStars();
+
+  var deedList=(feats&&feats[0])?feats:base.feats;
+  var storyText=story||('Born under '+chart.nak.name+', ruled by '+chart.planet+', you carried the mark of '+r108.name+' — a role held by fewer people in history than most empires had generals. In the '+era+', your name was spoken in rooms where decisions changed continents.');
+
+  // Card
+  document.getElementById('res-title').textContent=r108.name;
+  document.getElementById('res-faction').textContent=base.faction+' · '+era;
+  document.getElementById('res-power').textContent=tier.label;
+  document.getElementById('res-realm').textContent=r108.realm;
+  var domN=Math.floor(10000+chart.score*1200);
+  document.getElementById('res-dominion').textContent=domN>100000?(domN/100000).toFixed(1)+'L Souls':Math.round(domN/1000)+'K Souls';
+  document.getElementById('res-legacy').textContent=tier.tier;
+  var badgeEl=document.getElementById('res-badge');
+  if(badgeEl)badgeEl.textContent='"'+tier.badge+'"';
+  document.getElementById('res-story').textContent=storyText;
+
+  // Symbol
+  var symKey=pickRoleSymbol(r108,chart);
+  document.getElementById('roleSymbol').innerHTML=SYM[symKey]||SYM['sword'];
+
+  // Landscape
+  document.getElementById('landscapeWrap').innerHTML=getLandscape(chart.planet);
+
+  // Card deeds — compact
+  var dEl=document.getElementById('res-deeds');
+  if(dEl)dEl.innerHTML=deedList.map(function(f,i){
+    // shorten to first sentence / 80 chars
+    var short=f.length>80?f.substring(0,f.lastIndexOf(' ',80))+'…':f;
+    return '<div class="card-deed"><div class="card-deed-n">'+(['I','II','III'][i]||'')+'</div><div class="card-deed-t">'+short+'</div></div>';
+  }).join('');
+
+  // Card astro grid (compact, dark bg)
+  var caEl=document.getElementById('res-astro-card');
+  if(caEl)caEl.innerHTML=[
+    {icon:'🌙',label:'Moon Nakshatra',val:chart.nak.name},
+    {icon:'☀️',label:'Sun Rashi',val:chart.sunRashi},
+    {icon:'⬆️',label:'Lagna',val:chart.lagnaRashi},
+    {icon:'🔱',label:'Ruling Planet',val:chart.planet},
+    {icon:'✴️',label:'Nakshatra Pada',val:'Pada '+chart.pada},
+    {icon:'⚡',label:'Realm',val:r108.realm.split(' & ')[0]}
+  ].map(function(a){
+    return '<div class="card-acell"><span class="card-aicon">'+a.icon+'</span><span class="card-alabel">'+a.label+'</span><div class="card-aval">'+a.val+'</div></div>';
+  }).join('');
+
+
+
+  // Rank section
+  document.getElementById('sec-power-big').textContent=tier.label;
+  document.getElementById('sec-rank-desc').innerHTML=rankDesc
+    ?rankDesc.replace(/(\d[\d,.]+%?)/g,'<strong>$1</strong>')
+    :'You were among the <strong>rarest</strong> in all of recorded history — this role existed in fewer than '+tier.label.replace('TOP ','')+' of all human lifetimes.';
+  document.getElementById('sec-above').textContent=tier.above;
+  document.getElementById('sec-tier-label').textContent=tier.tier;
+  var secBadgeEl=document.getElementById('sec-badge');
+  if(secBadgeEl)secBadgeEl.textContent=tier.badge;
+  document.getElementById('sec-below').textContent=tier.below;
+  document.getElementById('sec-caption').innerHTML='Your Nakshatra was <strong>'+chart.nak.name+'</strong> · Ruled by <strong>'+chart.planet+'</strong> · This is why.';
+  setTimeout(function(){document.getElementById('progressFill').style.width=tier.pBar+'%';},400);
+
+  // Comparisons
+  var scEl=document.getElementById('sec-comps');
+  if(scEl)scEl.innerHTML=base.comparisons.map(function(c){
+    return '<div class="comp-item"><div class="comp-icon">'+c.icon+'</div><div class="comp-info"><div class="comp-name">'+c.name+'</div><div class="comp-desc">'+c.desc+'</div></div><div class="comp-rank-wrap"><span class="comp-rank">'+c.rank+'</span><span class="comp-you">'+c.you+'</span></div></div>';
+  }).join('');
+
+  // Powers
+  var pIcons=['⚔️','🔥','🛡️','👁️','🏹'];
+  var spEl=document.getElementById('sec-powers');
+  var powerItems=deedList.concat(base.powers).slice(0,5);
+  if(spEl)spEl.innerHTML=powerItems.map(function(p,i){
+    return '<div class="power-item"><div class="power-icon">'+pIcons[i%pIcons.length]+'</div><div class="power-text">'+p+'</div></div>';
+  }).join('');
+
+  // Context — use r108.ctx as primary, fall back to base.context
+  var ctx = r108.ctx || base.context || '';
+  var ctxPre=powerFact?'<strong>Oracle says:</strong> '+powerFact+' — ':'';
+  var sxEl=document.getElementById('sec-context');
+  if(sxEl)sxEl.innerHTML=ctxPre+ctx;
+
+  window.scrollTo({top:0,behavior:'smooth'});
+  document.getElementById('calcBtn').disabled=false;
+}
+
+/* ============================================================
+   LANDSCAPE
+============================================================ */
+function getLandscape(planet){
+  var war='<svg class="landscape" viewBox="0 0 600 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="lg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0a0308" stop-opacity="0.85"/><stop offset="100%" stop-color="#07030a" stop-opacity="1"/></linearGradient></defs><path d="M0,180 L0,110 L50,80 L100,100 L155,62 L205,88 L265,44 L320,78 L375,56 L425,84 L480,58 L535,80 L600,65 L600,180Z" fill="url(#lg)" opacity="0.8"/><path d="M145,180 L145,105 L160,105 L160,95 L175,95 L175,105 L188,105 L188,86 L196,86 L196,76 L204,76 L204,68 L212,68 L212,60 L220,60 L220,68 L228,68 L228,76 L236,76 L236,86 L244,86 L244,95 L258,95 L258,105 L275,105 L275,180Z" fill="#07030a"/><line x1="216" y1="22" x2="216" y2="60" stroke="#07030a" stroke-width="2.5"/><path d="M216,22 L235,30 L216,40Z" fill="#8a1f08" opacity="0.8"/><path d="M0,180 L0,148 Q150,124 300,140 Q450,156 600,140 L600,180Z" fill="#07030a"/></svg>';
+  var sea='<svg class="landscape" viewBox="0 0 600 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="lg3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#03080a" stop-opacity="0.9"/><stop offset="100%" stop-color="#07030a" stop-opacity="1"/></linearGradient></defs><path d="M0,180 L0,130 Q150,100 300,120 Q450,140 600,110 L600,180Z" fill="url(#lg3)"/><path d="M0,180 L0,155 Q100,140 200,150 Q350,165 500,145 Q560,138 600,148 L600,180Z" fill="#07030a"/><circle cx="300" cy="70" r="35" fill="rgba(220,180,60,.06)" stroke="rgba(220,160,30,.15)" stroke-width="1"/><circle cx="300" cy="70" r="22" fill="rgba(220,180,60,.08)"/></svg>';
+  var temple='<svg class="landscape" viewBox="0 0 600 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="lg4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#080210" stop-opacity="0.8"/><stop offset="100%" stop-color="#07030a" stop-opacity="1"/></linearGradient></defs><path d="M0,180 L0,120 Q150,100 300,110 Q450,120 600,100 L600,180Z" fill="url(#lg4)" opacity="0.7"/><path d="M220,110 L220,80 L228,80 L228,70 L235,70 L235,58 L242,58 L242,50 L250,50 L250,42 L258,42 L258,50 L265,50 L265,58 L272,58 L272,70 L280,70 L280,80 L288,80 L288,110Z" fill="#07030a"/><line x1="250" y1="10" x2="250" y2="42" stroke="#07030a" stroke-width="2"/><path d="M250,10 L268,20 L250,30Z" fill="#6a1a20" opacity="0.7"/><path d="M0,180 L0,148 Q150,132 300,142 Q450,152 600,138 L600,180Z" fill="#07030a"/></svg>';
+  if(planet==='Mars'||planet==='Ketu')return war;
+  if(planet==='Moon'||planet==='Rahu')return sea;
+  return temple;
+}
+
+/* ============================================================
+   ACTIONS
+============================================================ */
+function goBack(){
+  document.getElementById('page-result').classList.remove('visible');
+  document.getElementById('page-input').style.display='flex';
+  window.scrollTo({top:0});
+}
+function saveCard(){
+  var card=document.getElementById('shareCard');
+  if(typeof html2canvas==='undefined'){alert('Screenshot the card manually!');return;}
+  html2canvas(card,{
+    backgroundColor:'#07030a',
+    scale:2,
+    useCORS:true,
+    onclone:function(doc){
+      var cloned=doc.getElementById('shareCard');
+      if(cloned)cloned.classList.add('exporting-card');
+    }
+  }).then(function(canvas){
+    var a=document.createElement('a');a.download='purvajanma-destiny.png';a.href=canvas.toDataURL('image/png');a.click();
+  }).catch(function(){alert('Screenshot the card manually!');});
+}
+function shareCard(){
+  var role=document.getElementById('res-title').textContent;
+  var faction=document.getElementById('res-faction').textContent;
+  var power=document.getElementById('res-power').textContent;
+  var text='In another life I was '+role+' — '+faction+'\n'+power+' of all humans who ever lived 🔱\n\nFind out yours.';
+  window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(text),'_blank');
+}
+
+/* ============================================================
+   INIT
+============================================================ */
+document.addEventListener('DOMContentLoaded',function(){
+  document.getElementById('calcBtn').addEventListener('click',calculate);
+  document.getElementById('btnSave').addEventListener('click',saveCard);
+  document.getElementById('btnShare').addEventListener('click',shareCard);
+  document.getElementById('btnRetry').addEventListener('click',goBack);
+});
+
+})();
+</script>
+</body>
+</html>
